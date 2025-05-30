@@ -15,12 +15,12 @@ Hi, I'm Yunbei Zhang, a third-year Ph.D. student in the Department of Computer S
 
 ## News
 
-<!-- - **[May. 2025]** Join KLA as a Research Scientist Intern. -->
-- **[May. 2025]** One paper is accepted to **ICML 2025**!
-- **[Apr. 2025]** Invited as a reviewer for ACM MM 2025.
-- **[Jan. 2025]** One paper is selected as **WACV 2025 Oral** presentation!
-- **[Sep. 2024]** One paper is accepted to **NeurIPS 2024**!
-- **[Aug. 2024]** One paper is accepted to **WACV 2025**!
+- **[2025.05]** Join KLA as a Research Scientist Intern.
+- **[2025.05]** One paper is accepted to **ICML 2025**!
+- **[2025.04]** Invited as a reviewer for ACM MM 2025.
+- **[2025.01]** One paper is selected as **WACV 2025 Oral** presentation!
+- **[2024.09]** One paper is accepted to **NeurIPS 2024**!
+- **[2024.08]** One paper is accepted to **WACV 2025**!
 
 
 {% include_relative _includes/publications.md %}
