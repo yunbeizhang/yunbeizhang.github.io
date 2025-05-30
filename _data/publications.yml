@@ -1,0 +1,54 @@
+main:
+  - title: "DPCore: Dynamic Prompt Coreset for Continual Test-Time Adaptation"
+    authors: <strong>Yunbei Zhang</strong>, Akshay Mehra, Shuaicheng Niu, Jihun Hamm
+    conference_short: ICML'25
+    conference: International Conference on Machine Learning <strong>(ICML)</strong>, 2025.
+    pdf: https://arxiv.org/pdf/2406.10737
+    code: https://github.com/zybeich/DPCore
+    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+    image: ./assets/img/dpcore_fig.png
+    # notes: Preprint, under review.
+
+  - title: "OT-VP: Optimal Transport-guided Visual Prompting for Test-Time Adaptation"
+    authors: <strong>Yunbei Zhang</strong>, Akshay Mehra, Jihun Hamm
+    conference_short: WACV'25
+    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2025.
+    conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
+    pdf: https://arxiv.org/pdf/2407.09498
+    code: https://github.com/zybeich/OT-VP
+    image: ./assets/img/otvp_fig.png
+    notes: Oral
+
+  - title: "Understanding the Transferability of Representations via Task-Relatedness"
+    authors: Akshay Mehra, <strong>Yunbei Zhang</strong>, Jihun Hamm
+    conference_short: NeurIPS'24
+    conference: Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2024.
+    conference2: Mathematics of Modern Machine Learning Workshop at NeurIPS 2023.
+    pdf: https://arxiv.org/pdf/2307.00823
+    code: https://github.com/hammlab/TaskTransferAnalysis
+    image: ./assets/img/taskrelatedness_fig.png
+
+  - title: "Test-time Assessment of a Model's Performance on Unseen Domains via Optimal Transport"
+    authors: Akshay Mehra, <strong>Yunbei Zhang</strong>, Jihun Hamm
+    conference_short: CVPRW'24
+    conference: 2024 IEEE CVPR Workshop on Fair, Data-efficient, and Trusted Computer Vision.
+    pdf: https://openaccess.thecvf.com/content/CVPR2024W/TCV2024/papers/Mehra_Test-time_Assessment_of_a_Models_Performance_on_Unseen_Domains_via_CVPRW_2024_paper.pdf
+    code: https://github.com/hammlab/TETOT 
+    image: ./assets/img/tetot_fig.png
+
+  - title: "Achieving Reliable and Fair Skin Lesion Diagnosis via Unsupervised Domain Adaptation"
+    authors: Janet Wang, <strong>Yunbei Zhang</strong>,  Zhengming Ding, Jihun Hamm
+    conference_short: CVPRW'24
+    conference: 2024 IEEE CVPR Workshop on Domain adaptation, Explainability, Fairness in AI for Medical Image Analysis.
+    pdf: https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/papers/Wang_Achieving_Reliable_and_Fair_Skin_Lesion_Diagnosis_via_Unsupervised_Domain_CVPRW_2024_paper.pdf
+    image: ./assets/img/skin_fig.png
+
+  - title: "On the Fly Neural Style Smoothing for Risk-Averse Domain Generalization"
+    authors: Akshay Mehra, <strong>Yunbei Zhang</strong>, Bhavya Kailkhura, Jihun Hamm
+    conference_short: WACV'24
+    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2024.
+    pdf: https://openaccess.thecvf.com/content/WACV2024/papers/Mehra_On_the_Fly_Neural_Style_Smoothing_for_Risk-Averse_Domain_Generalization_WACV_2024_paper.pdf
+    code: https://github.com/hammlab/RiskAverseDG
+    image: ./assets/img/ttnss_fig.png
+    # notes: Early Accept
