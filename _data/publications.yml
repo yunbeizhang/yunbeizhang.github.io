@@ -6,8 +6,6 @@ main:
     conference2: Second Workshop on Test-Time Adaptation: Putting Updates to the Test! at ICML 2025.
     pdf: https://arxiv.org/pdf/2406.10737
     code: https://github.com/yunbeizhang/DPCore
-    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     image: ./assets/img/dpcore_fig.png
     # notes: Preprint, under review.
 
@@ -17,9 +15,7 @@ main:
 #     conference: USENIX Security Symposium <strong>(USENIX)</strong>, 2025.
 #     # pdf: 
 #     # code: 
-#     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
-#     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-#     image: ./assets/img/sok_fig.png
+#     image: ./assets/img/sok_fig.jpg
 #     # notes: Preprint, under review.
 
 #   - title: "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI–Expert Feedback"
@@ -38,7 +34,7 @@ main:
 #     # conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
 #     pdf: https://arxiv.org/pdf/2505.05804
 #     # code: 
-#     image: ./assets/img/meddam_fig.png
+#     image: ./assets/img/meddam_fig.jpg
     
 
   - title: "OT-VP: Optimal Transport-guided Visual Prompting for Test-Time Adaptation"
