@@ -14,11 +14,11 @@ Hi, I'm Yunbei Zhang, a third-year Ph.D. student in the Department of Computer S
 <!-- - **Adversarial Machine Learning:** adversarial attack, data poisoning -->
 
 ## News
-- **[2025.06]** Three papers are accepted to ICML 2025 Workshop (MoFA/FM4LS/PUT), one is selected as **Oral** presentation at MoFA!
-- **[2025.06]** One paper is accepted to **USENIX 2025**!
-- **[2025.05]** Join <span style="color:#41007F; font-weight:bold;">KLA</span> as a Research Scientist Intern.
+- **[2025.06]** Three papers are accepted to ICML 2025 Workshop (MoFA/FM4LS/PUT), one is selected as <span style="font-size: 1.3em; font-weight: bold; color: #228B22;">Oral</span> presentation at MoFA!
+- **[2025.06]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">USENIX**</span> 2025!
+- **[2025.05]** Join <span style="font-size: 1.2em; color:#41007F; font-weight:bold;">KLA</span> as a Research Scientist Intern.
 <!-- - **[2025.05]** One paper is accepted to **ICML 2025**! -->
-- **[2025.05]** One paper is accepted to <span style="font-size: 1.5em; font-weight: bold;">ICML 2025</span>!
+- **[2025.05]** One paper is accepted to <span style="font-size: 1.2em; font-weight: bold;">ICML</span> 2025!
 - **[2025.04]** Invited as a reviewer for ACM MM 2025.
 - **[2025.01]** One paper is selected as **WACV 2025 Oral** presentation!
 - **[2024.09]** One paper is accepted to **NeurIPS 2024**!
