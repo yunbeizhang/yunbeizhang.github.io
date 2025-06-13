@@ -26,10 +26,10 @@ main:
   #   image: ./assets/img/doctor_approved_fig.png
   #   notes: Oral
   
-  - title: "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI–Expert Feedback"
+  - title: "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI-Expert Feedback"
     authors: Janet Wang, <strong>Yunbei Zhang</strong>,  Zhengming Ding, Jihun Hamm
     conference_short: ICMLW'25
-    conference: 2nd Workshop on Models of Human Feedback for AI Alignment at ICML 2025. <span style="color:Red;"><b>Oral</b></span>
+    conference: "2nd Workshop on Models of Human Feedback for AI Alignment at ICML 2025. <span style="font-size: 1.0em; font-weight: bold; color: \#228B22;">Oral</span>"
     # pdf: 
     image: ./assets/img/doctor_approved_fig.png 
 
@@ -46,7 +46,7 @@ main:
   - title: "OT-VP: Optimal Transport-guided Visual Prompting for Test-Time Adaptation"
     authors: <strong>Yunbei Zhang</strong>, Akshay Mehra, Jihun Hamm
     conference_short: WACV'25
-    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2025. <span style="color:Red;"><b>Oral</b></span>
+    conference: "IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2025. <span style="font-size: 1.0em; font-weight: bold; color: \#228B22;">Oral</span>"
     conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
     pdf: https://arxiv.org/pdf/2407.09498
     code: https://github.com/yunbeizhang/OT-VP
