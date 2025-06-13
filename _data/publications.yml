@@ -15,7 +15,7 @@ main:
     authors: Yunsung Cheung, <strong>Yunbei Zhang</strong>, Nassir Marrouche, Jihun Hamm
     conference_short: USENIX'25
     conference: USENIX Security Symposium <strong>(USENIX)</strong>, 2025.
-    pdf: 
+    # pdf: 
     # code: 
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
@@ -26,7 +26,7 @@ main:
     authors: Janet Wang, <strong>Yunbei Zhang</strong>,  Zhengming Ding, Jihun Hamm
     conference_short: ICMLW'25
     conference: 2nd Workshop on Models of Human Feedback for AI Alignment at ICML 2025.
-    pdf: 
+    # pdf: 
     image: ./assets/img/doctor_approved_fig.png
     notes: Oral
 
@@ -37,7 +37,7 @@ Xiao Wang, Hao Xu, Tianming Liu, Min Xu
     conference: ICML 2025 Workshop on Multi-modal Foundation Models and Large Language Models for Life Sciences, 2025.
     # conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
     pdf: https://arxiv.org/pdf/2505.05804
-    code: 
+    # code: 
     image: ./assets/img/meddam_fig.png
     
 
