@@ -8,18 +8,17 @@ Hi, I'm Yunbei Zhang, a third-year Ph.D. student in the Department of Computer S
 
 ## Research Interests
 
-- **Trustworthy Machine Learning**
 - **Test/Inference-time Learning**
 - **Efficient Pre-trained Model Reprogramming**
+- **Trustworthy Machine Learning**
 <!-- - **Adversarial Machine Learning:** adversarial attack, data poisoning -->
 
 ## News
-- **[2025.06]** One paper is accepted for **Oral** presentation at the ICML 2025 MoFA workshop!
-- **[2025.06]** One paper is accepted to ICML 2025 PUT workshop!
-- **[2025.06]** One paper is accepted to ICML 2025 FM4LS workshop!
+- **[2025.06]** Three papers are accepted to ICML 2025 Workshop (MoFA/FM4LS/PUT), one is selected as **Oral** presentation at MoFA!
 - **[2025.06]** One paper is accepted to **USENIX 2025**!
-- **[2025.05]** Join KLA as a Research Scientist Intern.
-- **[2025.05]** One paper is accepted to **ICML 2025**!
+- **[2025.05]** Join <span style="color:#41007F; font-weight:bold;">KLA</span> as a Research Scientist Intern.
+<!-- - **[2025.05]** One paper is accepted to **ICML 2025**! -->
+- **[2025.05]** One paper is accepted to <span style="font-size: 1.5em; font-weight: bold;">ICML 2025</span>!
 - **[2025.04]** Invited as a reviewer for ACM MM 2025.
 - **[2025.01]** One paper is selected as **WACV 2025 Oral** presentation!
 - **[2024.09]** One paper is accepted to **NeurIPS 2024**!
