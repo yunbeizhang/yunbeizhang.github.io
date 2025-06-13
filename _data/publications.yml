@@ -27,8 +27,7 @@ main:
     notes: Oral
 
   - title: "Describe Anything in Medical Images"
-    authors: Xi Xiao, <strong>Yunbei Zhang</strong>, Thanh-Huy Nguyen, Ba-Thinh Lam, Janet Wang, Jihun Hamm, Tianyang Wang, Xingjian Li,
-Xiao Wang, Hao Xu, Tianming Liu, Min Xu
+    authors: Xi Xiao, <strong>Yunbei Zhang</strong>, Thanh-Huy Nguyen, Ba-Thinh Lam, Janet Wang, Jihun Hamm, Tianyang Wang, Xingjian Li, Xiao Wang, Hao Xu, Tianming Liu, Min Xu
     conference_short: ICMLW'25
     conference: ICML 2025 Workshop on Multi-modal Foundation Models and Large Language Models for Life Sciences, 2025.
     # conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
