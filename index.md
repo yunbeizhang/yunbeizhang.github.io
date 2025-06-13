@@ -14,6 +14,9 @@ Hi, I'm Yunbei Zhang, a third-year Ph.D. student in the Department of Computer S
 <!-- - **Adversarial Machine Learning:** adversarial attack, data poisoning -->
 
 ## News
+- **[2025.06]** One paper is accepted for **Oral** presentation at the ICML 2025 MoFA workshop!
+- **[2025.06]** One paper is accepted to ICML 2025 PUT workshop!
+- **[2025.06]** One paper is accepted to ICML 2025 FM4LS workshop!
 - **[2025.06]** One paper is accepted to **USENIX 2025**!
 - **[2025.05]** Join KLA as a Research Scientist Intern.
 - **[2025.05]** One paper is accepted to **ICML 2025**!

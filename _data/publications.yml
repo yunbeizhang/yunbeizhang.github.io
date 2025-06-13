@@ -3,12 +3,43 @@ main:
     authors: <strong>Yunbei Zhang</strong>, Akshay Mehra, Shuaicheng Niu, Jihun Hamm
     conference_short: ICML'25
     conference: International Conference on Machine Learning <strong>(ICML)</strong>, 2025.
+    conference2: Second Workshop on Test-Time Adaptation: Putting Updates to the Test! at ICML 2025.
     pdf: https://arxiv.org/pdf/2406.10737
-    code: https://github.com/zybeich/DPCore
+    code: https://github.com/yunbeizhang/DPCore
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     image: ./assets/img/dpcore_fig.png
     # notes: Preprint, under review.
+
+  - title: "SoK: Can Synthetic Images Replace Real Data? A Survey of Utility and Privacy of Synthetic Image Generation"
+    authors: Yunsung Cheung, <strong>Yunbei Zhang</strong>, Nassir Marrouche, Jihun Hamm
+    conference_short: USENIX'25
+    conference: USENIX Security Symposium <strong>(USENIX)</strong>, 2025.
+    pdf: 
+    # code: 
+    # page: https://class-il.mpi-inf.mpg.de/mnemonics/
+    # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
+    image: ./assets/img/sok_fig.png
+    # notes: Preprint, under review.
+
+  - title: "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI–Expert Feedback"
+    authors: Janet Wang, <strong>Yunbei Zhang</strong>,  Zhengming Ding, Jihun Hamm
+    conference_short: ICMLW'25
+    conference: 2nd Workshop on Models of Human Feedback for AI Alignment at ICML 2025.
+    pdf: 
+    image: ./assets/img/doctor_approved_fig.png
+    notes: Oral
+
+  - title: "Describe Anything in Medical Images"
+    authors: Xi Xiao, <strong>Yunbei Zhang</strong>, Thanh-Huy Nguyen, Ba-Thinh Lam, Janet Wang, Jihun Hamm, Tianyang Wang, Xingjian Li,
+Xiao Wang, Hao Xu, Tianming Liu, Min Xu
+    conference_short: ICMLW'25
+    conference: ICML 2025 Workshop on Multi-modal Foundation Models and Large Language Models for Life Sciences, 2025.
+    # conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
+    pdf: https://arxiv.org/pdf/2505.05804
+    code: 
+    image: ./assets/img/meddam_fig.png
+    
 
   - title: "OT-VP: Optimal Transport-guided Visual Prompting for Test-Time Adaptation"
     authors: <strong>Yunbei Zhang</strong>, Akshay Mehra, Jihun Hamm
@@ -16,7 +47,7 @@ main:
     conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2025.
     conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
     pdf: https://arxiv.org/pdf/2407.09498
-    code: https://github.com/zybeich/OT-VP
+    code: https://github.com/yunbeizhang/OT-VP
     image: ./assets/img/otvp_fig.png
     notes: Oral
 
