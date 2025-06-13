@@ -1,8 +1,8 @@
 main:
   - title: "DPCore: Dynamic Prompt Coreset for Continual Test-Time Adaptation"
-    authors: <strong>Yunbei Zhang</strong>, Akshay Mehra, Shuaicheng Niu, Jihun Hamm
+    authors: <span style='font-size: 1.1em; font-weight: bold; color: Black;'>Yunbei Zhang</span>, Akshay Mehra, Shuaicheng Niu, Jihun Hamm
     conference_short: ICML'25
-    conference: International Conference on Machine Learning <strong>(ICML)</strong>, 2025.
+    conference: "International Conference on Machine Learning <span style='font-size: 1.1em; font-weight: bold; color: Black;'>ICML</span>, 2025."
     conference2: "Second Workshop on Test-Time Adaptation: Putting Updates to the Test! at ICML 2025."
     pdf: https://arxiv.org/pdf/2406.10737
     code: https://github.com/yunbeizhang/DPCore
