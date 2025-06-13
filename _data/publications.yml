@@ -18,16 +18,23 @@ main:
     image: ./assets/img/sok_fig.jpg
     # notes: Preprint, under review.
 
+  # - title: "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI–Expert Feedback"
+  #   authors: Janet Wang, <strong>Yunbei Zhang</strong>,  Zhengming Ding, Jihun Hamm
+  #   conference_short: ICMLW'25
+  #   conference: 2nd Workshop on Models of Human Feedback for AI Alignment at ICML 2025.
+  #   # pdf: 
+  #   image: ./assets/img/doctor_approved_fig.png
+  #   notes: Oral
+  
   - title: "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI–Expert Feedback"
     authors: Janet Wang, <strong>Yunbei Zhang</strong>,  Zhengming Ding, Jihun Hamm
     conference_short: ICMLW'25
-    conference: 2nd Workshop on Models of Human Feedback for AI Alignment at ICML 2025.
+    conference: 2nd Workshop on Models of Human Feedback for AI Alignment at ICML 2025. <span style="color:Red;"><b>Oral</b></span>
     # pdf: 
-    image: ./assets/img/doctor_approved_fig.png
-    notes: Oral
+    image: ./assets/img/doctor_approved_fig.png 
 
   - title: "Describe Anything in Medical Images"
-    authors: Xi Xiao, <strong>Yunbei Zhang</strong>, Thanh-Huy Nguyen, Ba-Thinh Lam, Janet Wang, Jihun Hamm, Tianyang Wang, Xingjian Li, Xiao Wang, Hao Xu, Tianming Liu, Min Xu
+    authors: Xi Xiao, <strong>Yunbei Zhang</strong>, Thanh-Huy Nguyen, Ba-Thinh Lam, Janet Wang, Jihun Hamm et al. # Tianyang Wang, Xingjian Li, Xiao Wang, Hao Xu, Tianming Liu, Min Xu
     conference_short: ICMLW'25
     conference: ICML 2025 Workshop on Multi-modal Foundation Models and Large Language Models for Life Sciences, 2025.
     # conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
@@ -39,12 +46,12 @@ main:
   - title: "OT-VP: Optimal Transport-guided Visual Prompting for Test-Time Adaptation"
     authors: <strong>Yunbei Zhang</strong>, Akshay Mehra, Jihun Hamm
     conference_short: WACV'25
-    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2025.
+    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2025. <span style="color:Red;"><b>Oral</b></span>
     conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
     pdf: https://arxiv.org/pdf/2407.09498
     code: https://github.com/yunbeizhang/OT-VP
     image: ./assets/img/otvp_fig.png
-    notes: Oral
+    # notes: Oral
 
   - title: "Understanding the Transferability of Representations via Task-Relatedness"
     authors: Akshay Mehra, <strong>Yunbei Zhang</strong>, Jihun Hamm
