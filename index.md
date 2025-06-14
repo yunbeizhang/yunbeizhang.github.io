@@ -15,14 +15,14 @@ Hi, I'm Yunbei Zhang, a third-year Ph.D. student in the Department of Computer S
 
 ## News
 - **[2025.06]** Three papers are accepted to <span style="font-size: 1.1em; font-weight: bold; color: Black;">ICML</span> 2025 Workshop (MoFA/FM4LS/PUT), one is selected as <span style="font-size: 1.0em; font-weight: bold; color: #228B22;">Oral</span> presentation at MoFA!
-- **[2025.06]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">USENIX</span> 2025!
+- **[2025.06]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold; color: Black;">USENIX</span> 2025!
 - **[2025.05]** Join <span style="font-size: 1.1em; color:#41007F; font-weight:bold;">KLA</span> as a Research Scientist Intern.
 <!-- - **[2025.05]** One paper is accepted to **ICML 2025**! -->
-- **[2025.05]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">ICML</span> 2025!
+- **[2025.05]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold; color: Black;">ICML</span> 2025!
 - **[2025.04]** Invited as a reviewer for ACM MM 2025.
-- **[2025.01]** One paper is selected as <span style="font-size: 1.1em; font-weight: bold;">WACV</span> 2025 <span style="font-size: 1.0em; font-weight: bold; color: #228B22;">Oral</span> presentation!
-- **[2024.09]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">NeurIPS</span> 2024!
-- **[2024.08]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">WACV</span> 2025!
+- **[2025.01]** One paper is selected as <span style="font-size: 1.1em; font-weight: bold; color: Black;">WACV</span> 2025 <span style="font-size: 1.0em; font-weight: bold; color: #228B22;">Oral</span> presentation!
+- **[2024.09]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold; color: Black;">NeurIPS</span> 2024!
+- **[2024.08]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold; color: Black;">WACV</span> 2025!
 
 
 {% include_relative _includes/publications.md %}
