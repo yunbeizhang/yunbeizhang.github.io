@@ -1,10 +1,8 @@
 <!-- <h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2> -->
-<h2 id="publications" style="margin: 2px 0px -5px;">
-  Publications
-  <div style="font-size: 0.8em; font-weight: normal; color: #555; margin-top: 4px;">
-    * indicates equal contribution
-  </div>
+<h2 id="publications" style="margin: 2px 0px -15px;">
+  Publications <span style="font-size: 0.6em; font-weight: normal; color: #555;">(* indicates equal contribution)</span>
 </h2>
+
 
 
 <div class="publications">
