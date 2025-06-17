@@ -1,8 +1,8 @@
 main:
   - title: "DPCore: Dynamic Prompt Coreset for Continual Test-Time Adaptation"
-    authors: "<span style='font-size: 1.1em; font-weight: bold; color: Black;'>Yunbei Zhang</span>, Akshay Mehra, Shuaicheng Niu, Jihun Hamm"
+    authors: "<span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Akshay Mehra, Shuaicheng Niu, Jihun Hamm"
     conference_short: ICML'25
-    conference: "International Conference on Machine Learning <span style='font-size: 1.1em; font-weight: bold; color: Black;'>(ICML)</span>, 2025."
+    conference: "International Conference on Machine Learning <span style='font-size: 1.1em; font-weight: bold;'>(ICML)</span>, 2025."
     conference2: "Second Workshop on Test-Time Adaptation: Putting Updates to the Test! at ICML 2025."
     pdf: https://arxiv.org/pdf/2406.10737
     code: https://github.com/yunbeizhang/DPCore
@@ -10,22 +10,22 @@ main:
     # notes: Preprint, under review.
 
   - title: "SoK: Can Synthetic Images Replace Real Data? A Survey of Utility and Privacy of Synthetic Image Generation"
-    authors: "Yunsung Cheung, <span style='font-size: 1.1em; font-weight: bold; color: Black;'>Yunbei Zhang</span>, Nassir Marrouche, Jihun Hamm"
+    authors: "Yunsung Cheung, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Nassir Marrouche, Jihun Hamm"
     conference_short: USENIX'25
-    conference: "USENIX Security Symposium <span style='font-size: 1.1em; font-weight: bold; color: Black;'>(USENIX)</span>, 2025."
+    conference: "USENIX Security Symposium <span style='font-size: 1.1em; font-weight: bold;'>(USENIX)</span>, 2025."
     pdf: 
     code: 
     image: ./assets/img/sok_fig.jpg
   
   - title: "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI-Expert Feedback"
-    authors: "Janet Wang*, <span style='font-size: 1.1em; font-weight: bold; color: Black;'>Yunbei Zhang</span>*,  Zhengming Ding, Jihun Hamm"
+    authors: "Janet Wang*, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>*,  Zhengming Ding, Jihun Hamm"
     conference_short: ICMLW'25
     conference: "2nd Workshop on Models of Human Feedback for AI Alignment at ICML 2025. <span style='font-size: 1.0em; font-style: normal; font-weight: bold; color: Red;'>[Oral]</span>"
     # pdf: 
     image: ./assets/img/doctor_approved_fig.png 
 
   - title: "Describe Anything in Medical Images"
-    authors: "Xi Xiao*, <span style='font-size: 1.1em; font-weight: bold; color: Black;'>Yunbei Zhang</span>*, Thanh-Huy Nguyen*, Ba-Thinh Lam, Janet Wang, Jihun Hamm et al." # Tianyang Wang, Xingjian Li, Xiao Wang, Hao Xu, Tianming Liu, Min Xu
+    authors: "Xi Xiao*, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>*, Thanh-Huy Nguyen*, Ba-Thinh Lam, Janet Wang, Jihun Hamm et al." # Tianyang Wang, Xingjian Li, Xiao Wang, Hao Xu, Tianming Liu, Min Xu
     conference_short: ICMLW'25
     conference: ICML 2025 Workshop on Multi-modal Foundation Models and Large Language Models for Life Sciences, 2025.
     # conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
@@ -35,25 +35,25 @@ main:
     
 
   - title: "OT-VP: Optimal Transport-guided Visual Prompting for Test-Time Adaptation"
-    authors: "<span style='font-size: 1.1em; font-weight: bold; color: Black;'>Yunbei Zhang</span>, Akshay Mehra, Jihun Hamm"
+    authors: "<span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Akshay Mehra, Jihun Hamm"
     conference_short: WACV'25
-    conference: "IEEE/CVF Winter Conference on Applications of Computer Vision <span style='font-size: 1.1em; font-weight: bold; color: Black;'>(WACV)</span>, 2025. <span style='font-size: 1.0em; font-style: normal; font-weight: bold; color: Red;'>[Oral]</span>"
+    conference: "IEEE/CVF Winter Conference on Applications of Computer Vision <span style='font-size: 1.1em; font-weight: bold;'>(WACV)</span>, 2025. <span style='font-size: 1.0em; font-style: normal; font-weight: bold; color: Red;'>[Oral]</span>"
     conference2: "1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT) at CVPR 2024"
     pdf: https://arxiv.org/pdf/2407.09498
     code: https://github.com/yunbeizhang/OT-VP
     image: ./assets/img/otvp_fig.png
 
   - title: "Understanding the Transferability of Representations via Task-Relatedness"
-    authors: "Akshay Mehra, <span style='font-size: 1.1em; font-weight: bold; color: Black;'>Yunbei Zhang</span>, Jihun Hamm"
+    authors: "Akshay Mehra, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Jihun Hamm"
     conference_short: NeurIPS'24
-    conference: "Neural Information Processing Systems <span style='font-size: 1.1em; font-weight: bold; color: Black;'>(NeurIPS)</span>, 2024."
+    conference: "Neural Information Processing Systems <span style='font-size: 1.1em; font-weight: bold;'>(NeurIPS)</span>, 2024."
     conference2: Mathematics of Modern Machine Learning Workshop at NeurIPS 2023.
     pdf: https://arxiv.org/pdf/2307.00823
     code: https://github.com/hammlab/TaskTransferAnalysis
     image: ./assets/img/taskrelatedness_fig.png
 
   - title: "Test-time Assessment of a Model's Performance on Unseen Domains via Optimal Transport"
-    authors: "Akshay Mehra, <span style='font-size: 1.1em; font-weight: bold; color: Black;'>Yunbei Zhang</span>, Jihun Hamm"
+    authors: "Akshay Mehra, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Jihun Hamm"
     conference_short: CVPRW'24
     conference: 2024 IEEE CVPR Workshop on Fair, Data-efficient, and Trusted Computer Vision.
     pdf: https://openaccess.thecvf.com/content/CVPR2024W/TCV2024/papers/Mehra_Test-time_Assessment_of_a_Models_Performance_on_Unseen_Domains_via_CVPRW_2024_paper.pdf
@@ -61,16 +61,16 @@ main:
     image: ./assets/img/tetot_fig.png
 
   - title: "Achieving Reliable and Fair Skin Lesion Diagnosis via Unsupervised Domain Adaptation"
-    authors: "Janet Wang, <span style='font-size: 1.1em; font-weight: bold; color: Black;'>Yunbei Zhang</span>,  Zhengming Ding, Jihun Hamm"
+    authors: "Janet Wang, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>,  Zhengming Ding, Jihun Hamm"
     conference_short: CVPRW'24
     conference: 2024 IEEE CVPR Workshop on Domain adaptation, Explainability, Fairness in AI for Medical Image Analysis.
     pdf: https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/papers/Wang_Achieving_Reliable_and_Fair_Skin_Lesion_Diagnosis_via_Unsupervised_Domain_CVPRW_2024_paper.pdf
     image: ./assets/img/skin_fig.png
 
   - title: "On the Fly Neural Style Smoothing for Risk-Averse Domain Generalization"
-    authors: "Akshay Mehra, <span style='font-size: 1.1em; font-weight: bold; color: Black;'>Yunbei Zhang</span>, Bhavya Kailkhura, Jihun Hamm"
+    authors: "Akshay Mehra, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Bhavya Kailkhura, Jihun Hamm"
     conference_short: WACV'24
-    conference: "IEEE/CVF Winter Conference on Applications of Computer Vision <span style='font-size: 1.1em; font-weight: bold; color: Black;'>(WACV)</span>, 2024."
+    conference: "IEEE/CVF Winter Conference on Applications of Computer Vision <span style='font-size: 1.1em; font-weight: bold;'>(WACV)</span>, 2024."
     pdf: https://openaccess.thecvf.com/content/WACV2024/papers/Mehra_On_the_Fly_Neural_Style_Smoothing_for_Risk-Averse_Domain_Generalization_WACV_2024_paper.pdf
     code: https://github.com/hammlab/RiskAverseDG
     image: ./assets/img/ttnss_fig.png
