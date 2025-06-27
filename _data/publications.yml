@@ -13,7 +13,7 @@ main:
     authors: "Yunsung Cheung, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Nassir Marrouche, Jihun Hamm"
     conference_short: USENIX'25
     conference: "USENIX Security Symposium <span style='font-size: 1.1em; font-weight: bold;'>(USENIX)</span>, 2025."
-    pdf: 
+    pdf: https://www.arxiv.org/pdf/2506.19360
     code: 
     image: ./assets/img/sok_fig.jpg
   
@@ -21,7 +21,8 @@ main:
     authors: "Janet Wang*, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>*,  Zhengming Ding, Jihun Hamm"
     conference_short: ICMLW'25
     conference: "2nd Workshop on Models of Human Feedback for AI Alignment at ICML 2025. <span style='font-size: 1.0em; font-style: normal; font-weight: bold; color: Red;'>[Oral]</span>"
-    # pdf: 
+    pdf: https://arxiv.org/pdf/2506.12323
+    code: https://github.com/janet-sw/MAGIC
     image: ./assets/img/doctor_approved_fig.png 
 
   - title: "Describe Anything in Medical Images"
