@@ -9,6 +9,15 @@ main:
     image: ./assets/img/dpcore_fig.png
     # notes: Preprint, under review.
 
+  - title: "Visual Instance-aware Prompt Tuning"
+    authors: "Xi Xiao*, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>*, Xingjian Li, Tianyang Wang, Xiao Wang, Yuxiang Wei, Jihun Hamm, Min Xu"
+    conference_short: ACM MM'25
+    conference: "33rd ACM International Conference on Multimedia <span style='font-size: 1.1em; font-weight: bold;'>(ACM MM)</span>, 2025."
+    # conference2: "Second Workshop on Test-Time Adaptation: Putting Updates to the Test! at ICML 2025."
+    pdf: 
+    code: 
+    image: ./assets/img/viapt_fig.png
+
   - title: "SoK: Can Synthetic Images Replace Real Data? A Survey of Utility and Privacy of Synthetic Image Generation"
     authors: "Yunsung Cheung, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Nassir Marrouche, Jihun Hamm"
     conference_short: USENIX'25
