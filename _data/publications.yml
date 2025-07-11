@@ -14,7 +14,7 @@ main:
     conference_short: ACM MM'25
     conference: "33rd ACM International Conference on Multimedia <span style='font-size: 1.1em; font-weight: bold;'>(ACM MM)</span>, 2025."
     # conference2: "Second Workshop on Test-Time Adaptation: Putting Updates to the Test! at ICML 2025."
-    pdf: 
+    pdf: https://arxiv.org/pdf/2507.07796
     code: 
     image: ./assets/img/viapt_fig.png
 
