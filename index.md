@@ -6,7 +6,7 @@ layout: homepage
 
 <!-- Hi, I'm Yunbei Zhang, a third-year Ph.D. student in the Department of Computer Science at Tulane University, advised by Prof. [Jihun Hamm](https://www.cs.tulane.edu/~jhamm3/). I received B.S. in Mathematics from Osaka University in Japan, advised by Prof. [Masaaki Wada](https://mahoraga.com/masaakiwada/index-en.html). -->
 
-Hi, I'm Yunbei Zhang (张云贝), a Ph.D. student in Computer Science at Tulane University, advised by Dr. Jihun Hamm. My current research is focused on Trustworthy ML, Test/Inference-time Learning, and Efficient Model Reprogramming. Prior to my doctoral studies, I received a B.S. in Mathematics from Osaka University, advised by Prof.Masaaki Wada and Prof.Seidai Yasuda. My academic journey also includes two years at Peking University; in 2015, I made a deliberate choice to withdraw and forge my own path, a decision that ultimately led me to where I am today.
+Hi, I'm **Yunbei Zhang** (张云贝), a Ph.D. student in Computer Science at **Tulane University**, advised by Dr. Jihun Hamm. My current research is focused on **Trustworthy ML**, **Test/Inference-time Learning**, and **Efficient Model Reprogramming**. Prior to my doctoral studies, I received a B.S. in Mathematics from **Osaka University**, advised by Prof.Masaaki Wada and Prof.Seidai Yasuda. My academic journey also includes two years at **Peking University**; in 2015, I made a deliberate choice to withdraw and forge my own path, a decision that ultimately led me to where I am today.
 
 <!-- ## Research Interests
 
