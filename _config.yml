@@ -1,13 +1,14 @@
 # Basic Information 
 title: Yunbei Zhang
 position: Ph.D. Student
-affiliation: Tulane University
-email: yzhang111[at]tulane.edu
+# affiliation: Tulane University
+# email: yzhang111[at]tulane.edu
+email: yunbeizhang.ml[at]gmail.com
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: Yunbei Zhang, Ph.D. Student, Tulane University, Computer Science, Machine Learning, Artificial Intelligence
-description: Personal website of Yunbei Zhang, a Ph.D. student at Tulane University. Yunbei's research interests include machine learning and artificial intelligence.
+keywords: Yunbei Zhang, Ph.D. Student, Computer Science, Machine Learning, Artificial Intelligence
+description: Personal website of Yunbei Zhang. Yunbei's research interests include machine learning and artificial intelligence.
 canonical: https://minimal-light-theme.yliu.me/
 
 # Links 
