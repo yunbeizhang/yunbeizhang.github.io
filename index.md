@@ -18,6 +18,9 @@ Prior to my doctoral studies, I graduated with a B.S. in Mathematics from Osaka 
 <!-- - **Adversarial Machine Learning:** adversarial attack, data poisoning -->
 
 ## News
+- **[2025.09]** Join <span style="font-size: 1.1em; color:#232F3EF; font-weight: bold;">Amazon</span> as an Applied Scientist Intern, see you in Seattle.
+- **[2025.09]** Invited as a reviewer for ICLR 2026.
+- **[2025.08]** Successfully passed PhD Oral Qualification exam!
 - **[2025.07]** Two papers are accepted to <span style="font-size: 1.1em; font-weight: bold;">ACM MM</span> 2025!
 - **[2025.06]** Three papers are accepted to <span style="font-size: 1.1em; font-weight: bold;">ICML</span> 2025 Workshop (MoFA/FM4LS/PUT), one is selected as <span style="font-size: 1.0em; font-weight: bold; color: Red;">Oral</span> presentation at MoFA!
 - **[2025.06]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">USENIX</span> 2025!
