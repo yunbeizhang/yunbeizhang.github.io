@@ -11,14 +11,13 @@ Hi, I'm **Yunbei Zhang** (张云贝), a Ph.D. student in Computer Science at Tul
 Prior to my doctoral studies, I graduated with a B.S. in Mathematics from Osaka University, where I was advised by Prof. Masaaki Wada and Prof. Seidai Yasuda. My undergraduate education also includes two years at Peking University; in 2015, I made a deliberate choice to withdraw and forge my own path, a decision that ultimately led me to where I am today.
 
 <!-- ## Research Interests
-
-- **Test/Inference-time Learning**
 - **Efficient Pre-trained Model Reprogramming**
+- **Test/Inference-time Learning**
 - **Trustworthy Machine Learning** -->
 <!-- - **Adversarial Machine Learning:** adversarial attack, data poisoning -->
 
 ## News
-- **[2025.09]** Join <span style="font-size: 1.1em; color:#232F3EF; font-weight: bold;">Amazon</span> as an Applied Scientist Intern, see you in Seattle.
+- **[2025.09]** Join <span style="font-size: 1.1em; color:#232F3E; font-weight: bold;">Amazon</span> as an Applied Scientist Intern, see you in Seattle!
 - **[2025.09]** Invited as a reviewer for ICLR 2026.
 - **[2025.08]** Successfully passed PhD Oral Qualification exam!
 - **[2025.07]** Two papers are accepted to <span style="font-size: 1.1em; font-weight: bold;">ACM MM</span> 2025!
