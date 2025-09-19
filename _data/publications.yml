@@ -62,14 +62,14 @@ main:
     code: https://github.com/yunbeizhang/OT-VP
     image: ./assets/img/otvp_fig.png
 
-  # - title: "Understanding the Transferability of Representations via Task-Relatedness"
-  #   authors: "Akshay Mehra, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Jihun Hamm"
-  #   conference_short: NeurIPS'24
-  #   conference: "Neural Information Processing Systems <span style='font-size: 1.1em; font-weight: bold;'>(NeurIPS)</span>, 2024."
-  #   conference2: Mathematics of Modern Machine Learning Workshop at NeurIPS 2023.
-  #   pdf: https://arxiv.org/pdf/2307.00823
-  #   code: https://github.com/hammlab/TaskTransferAnalysis
-  #   image: ./assets/img/taskrelatedness_fig.png
+  - title: "Understanding the Transferability of Representations via Task-Relatedness"
+    authors: "Akshay Mehra, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Jihun Hamm"
+    conference_short: NeurIPS'24
+    conference: "Neural Information Processing Systems <span style='font-size: 1.1em; font-weight: bold;'>(NeurIPS)</span>, 2024."
+    conference2: Mathematics of Modern Machine Learning Workshop at NeurIPS 2023.
+    pdf: https://arxiv.org/pdf/2307.00823
+    code: https://github.com/hammlab/TaskTransferAnalysis
+    image: ./assets/img/taskrelatedness_fig.png
 
   # - title: "Test-time Assessment of a Model's Performance on Unseen Domains via Optimal Transport"
   #   authors: "Akshay Mehra, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Jihun Hamm"
