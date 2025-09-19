@@ -9,6 +9,14 @@ main:
     image: ./assets/img/dpcore_fig.png
     # notes: Preprint, under review.
 
+  - title: "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI-Expert Feedback"
+    authors: "Janet Wang*, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>*,  Zhengming Ding, Jihun Hamm"
+    conference_short: NeurIPS'25
+    conference: "Neural Information Processing Systems <span style='font-size: 1.1em; font-weight: bold;'>(NeurIPS)</span>, 2025."
+    pdf: https://arxiv.org/pdf/2506.12323
+    code: https://github.com/janet-sw/MAGIC
+    image: ./assets/img/doctor_approved_fig.png 
+
   - title: "eSkinHealth: A Multimodal Dataset for Neglected Tropical Skin Diseases"
     authors: "Janet Wang, Xin Hu, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>*, Diabate Almamy, Vagamon Bamba, Konan Amos Sébastien Koffi, Yao Koffi Aubin, Zhengming Ding, Jihun Hamm, Rie R. Yotsu"
     conference_short: ACM MM'25
@@ -35,14 +43,6 @@ main:
     code: 
     image: ./assets/img/sok_fig.jpg
   
-  - title: "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI-Expert Feedback"
-    authors: "Janet Wang*, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>*,  Zhengming Ding, Jihun Hamm"
-    conference_short: ICMLW'25
-    conference: "2nd Workshop on Models of Human Feedback for AI Alignment at ICML 2025. <span style='font-size: 1.0em; font-style: normal; font-weight: bold; color: Red;'>[Oral]</span>"
-    pdf: https://arxiv.org/pdf/2506.12323
-    code: https://github.com/janet-sw/MAGIC
-    image: ./assets/img/doctor_approved_fig.png 
-
   - title: "Describe Anything in Medical Images"
     authors: "Xi Xiao*, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>*, Thanh-Huy Nguyen*, Ba-Thinh Lam, Janet Wang, Jihun Hamm et al." # Tianyang Wang, Xingjian Li, Xiao Wang, Hao Xu, Tianming Liu, Min Xu
     conference_short: ICMLW'25
