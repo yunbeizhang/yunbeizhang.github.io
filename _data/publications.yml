@@ -18,7 +18,7 @@ main:
     image: ./assets/img/doctor_approved_fig.png 
 
   - title: "eSkinHealth: A Multimodal Dataset for Neglected Tropical Skin Diseases"
-    authors: "Janet Wang, Xin Hu, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>*, Diabate Almamy, Vagamon Bamba, Konan Amos Sébastien Koffi, Yao Koffi Aubin, Zhengming Ding, Jihun Hamm, Rie R. Yotsu"
+    authors: "Janet Wang, Xin Hu, <span style='font-size: 1.1em; font-weight: bold;'>Yunbei Zhang</span>, Diabate Almamy, Vagamon Bamba, Konan Amos Sébastien Koffi, Yao Koffi Aubin, Zhengming Ding, Jihun Hamm, Rie R. Yotsu"
     conference_short: ACM MM'25
     conference: "33rd ACM International Conference on Multimedia <span style='font-size: 1.1em; font-weight: bold;'>(ACM MM)</span>, 2025."
     # conference2: "Second Workshop on Test-Time Adaptation: Putting Updates to the Test! at ICML 2025."
