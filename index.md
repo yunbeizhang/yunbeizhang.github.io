@@ -17,6 +17,9 @@ Prior to my doctoral studies, I graduated with a B.S. in Mathematics from Osaka 
 <!-- - **Adversarial Machine Learning:** adversarial attack, data poisoning -->
 
 ## News
+- **[2025.10]** Awarded as a <span style="font-size: 1.1em; font-weight: bold;">Top Reviewer</span> for NeurIPS 2025!
+- **[2025.10]** Our new survey on <span style="font-size: 1.1em; font-weight: bold;"><a href="https://arxiv.org/abs/2510.13219">Prompt-based Adaptation in Large-scale Vision Models</a></span> is out!
+- **[2025.10]** Invited as a reviewer for CVPR 2026.
 - **[2025.09]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">NeurIPS</span> 2025, see you in San Diego!
 - **[2025.09]** Join <span style="font-size: 1.1em; color:#232F3E; font-weight: bold;">Amazon</span> as an Applied Scientist Intern, see you in Seattle!
 - **[2025.09]** Invited as a reviewer for ICLR 2026.
@@ -25,11 +28,12 @@ Prior to my doctoral studies, I graduated with a B.S. in Mathematics from Osaka 
 - **[2025.06]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">USENIX</span> 2025!
 - **[2025.05]** Join <span style="font-size: 1.1em; color:#41007F; font-weight:bold;">KLA</span> as a Research Scientist Intern.
 - **[2025.05]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">ICML</span> 2025!
+<!-- 
 - **[2025.04]** Invited as a reviewer for ACM MM 2025.
 - **[2025.01]** One paper is selected as <span style="font-size: 1.1em; font-weight: bold;">WACV</span> 2025 <span style="font-size: 1.0em; font-weight: bold; color: Red;">Oral</span> presentation!
 - **[2024.09]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">NeurIPS</span> 2024!
 - **[2024.08]** One paper is accepted to <span style="font-size: 1.1em; font-weight: bold;">WACV</span> 2025!
-
+ -->
 
 {% include_relative _includes/publications.md %}
 
