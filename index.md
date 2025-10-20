@@ -10,6 +10,8 @@ Hi, I'm **Yunbei Zhang** (张云贝), a Ph.D. student in Computer Science at Tul
 
 Prior to my doctoral studies, I graduated with a B.S. in Mathematics from Osaka University, where I was advised by Prof. Masaaki Wada and Prof. Seidai Yasuda. My undergraduate education also includes two years at Peking University; in 2015, I made a deliberate choice to withdraw and forge my own path, a decision that ultimately led me to where I am today.
 
+<p style="color:#0056b3; font-weight: bold;">I'm always open to discussing new research ideas and potential collaborations. If my work resonates with your interests, I would be delighted to connect.</p>
+
 <!-- ## Research Interests
 - **Efficient Pre-trained Model Reprogramming**
 - **Test/Inference-time Learning**
