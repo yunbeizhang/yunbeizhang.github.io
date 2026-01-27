@@ -19,6 +19,9 @@ Prior to my doctoral studies, I graduated with a B.S. in Mathematics from Osaka 
 <!-- - **Adversarial Machine Learning:** adversarial attack, data poisoning -->
 
 ## News
+- **[2026.01]** Join <span style="font-size: 1.1em; color:#007833; font-weight:bold;">ORNL</span> as a Research Scientist Intern.
+- **[2026.01]** Our new survey on <span style="font-size: 1.1em; font-weight: bold;"><a href="https://arxiv.org/abs/2510.13219">Prompt-based Adaptation in Large-scale Vision Models</a></span> is accepted to <span style="font-size: 1.1em; font-weight: bold;">TMLR</span>!
+- **[2026.01]** One paper is accepted to  <span style="font-size: 1.1em; font-weight: bold;">ICASSP</span> 2026!
 - **[2025.12]** Honored to receive <span style="font-size: 1.1em; font-weight: bold;"><a href="https://lambda.ai/research">Lambda's Research Grant</a></span>!
 - **[2025.10]** Awarded as a <span style="font-size: 1.1em; font-weight: bold;">Top Reviewer</span> for NeurIPS 2025!
 - **[2025.10]** Our new survey on <span style="font-size: 1.1em; font-weight: bold;"><a href="https://arxiv.org/abs/2510.13219">Prompt-based Adaptation in Large-scale Vision Models</a></span> is out!
