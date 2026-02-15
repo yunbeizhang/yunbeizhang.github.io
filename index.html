@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yunbei Zhang | AI Researcher</title>
+  <meta name="description" content="Yunbei Zhang, PhD Candidate. Research in Inference-Time Learning, AI Safety, and Efficient Model Adaptation.">
+  <link rel="icon" href="./assets/img/icon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <!-- Unique font combo: DM Serif Display for headings + Source Sans 3 for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Source Sans 3', 'Helvetica Neue', sans-serif;
+      background: #F6F3EE;
+      color: #2D2A26;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ===== NAV ===== */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(246, 243, 238, 0.85);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 980px; margin: 0 auto;
+      padding: 0.75rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.15rem; color: #3B6BA5;
+    }
+    .nav-links { display: flex; gap: 1.8rem; }
+    .nav-links a {
+      font-size: 0.82rem; color: #7A756D; transition: color 0.2s;
+      font-weight: 600; letter-spacing: 0.04em;
+    }
+    .nav-links a:hover { color: #2D2A26; }
+
+    /* ===== HERO ===== */
+    .hero {
+      max-width: 980px; margin: 0 auto;
+      padding: 7rem 2rem 3rem;
+      display: grid; grid-template-columns: 220px 1fr; gap: 3rem; align-items: start;
+    }
+    .avatar-col { position: sticky; top: 6rem; }
+    .avatar-frame {
+      width: 190px; height: 240px; border-radius: 10px;
+      overflow: hidden;
+      border: 3px solid #E8E3DB;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    .avatar-frame img { width: 100%; height: 100%; object-fit: cover; }
+    .avatar-socials {
+      display: flex; justify-content: center; gap: 0.7rem; margin-top: 1rem;
+    }
+    .avatar-socials a {
+      width: 34px; height: 34px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: #EDEAE4; color: #7A756D; font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .avatar-socials a:hover { background: #D4CFC6; color: #2D2A26; }
+
+    .hero-content h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 2.8rem; font-weight: 400; line-height: 1.15;
+      color: #1A1815;
+      letter-spacing: -0.01em;
+    }
+    .hero-affil {
+      margin-top: 0.5rem; font-size: 0.95rem; color: #7A756D;
+    }
+    .hero-affil .exp-highlight {
+      display: inline-block;
+      font-weight: 600; color: #4A6741;
+    }
+    .hero-bio {
+      margin-top: 1.2rem; font-size: 1rem; color: #4A4640; line-height: 1.85;
+    }
+    .hero-bio strong { color: #1A1815; font-weight: 600; }
+
+    .research-tags {
+      display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 1.2rem;
+    }
+    .tag {
+      padding: 0.28rem 0.72rem; border-radius: 4px; font-size: 0.76rem; font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .tag.blue { background: #E3ECF6; color: #3B6BA5; }
+    .tag.rose { background: #F5E3E3; color: #A54B4B; }
+    .tag.green { background: #E1EDE0; color: #4A6741; }
+    .tag.amber { background: #F0E8D4; color: #8B7234; }
+
+    .collab-note {
+      margin-top: 1.4rem; padding: 0.7rem 1rem; border-radius: 6px;
+      background: #EDE8DF;
+      border-left: 3px solid #B8A88A;
+      font-size: 0.88rem; color: #5A5347;
+    }
+    .collab-note strong { color: #3A3530; }
+
+    /* ===== SECTION ===== */
+    section {
+      max-width: 980px; margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+    .section-head {
+      display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.8rem;
+      border-bottom: 2px solid #E0DBD3; padding-bottom: 0.5rem;
+    }
+    .section-head h2 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.5rem; font-weight: 400; color: #1A1815;
+    }
+    .section-head .aside {
+      font-size: 0.8rem; color: #9A948A;
+    }
+
+    /* ===== NEWS (scrollable) ===== */
+    .news-scroll {
+      max-height: 260px; overflow-y: auto;
+      border: 1px solid #E0DBD3; border-radius: 8px;
+      background: #FDFCFA;
+      padding: 0.3rem 0;
+    }
+    .news-scroll::-webkit-scrollbar { width: 5px; }
+    .news-scroll::-webkit-scrollbar-track { background: transparent; }
+    .news-scroll::-webkit-scrollbar-thumb { background: #D4CFC6; border-radius: 10px; }
+    .news-item {
+      display: flex; gap: 1rem; align-items: baseline;
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid #F0ECE6;
+      transition: background 0.15s;
+    }
+    .news-item:last-child { border-bottom: none; }
+    .news-item:hover { background: #F6F3EE; }
+    .news-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem; color: #9A948A; font-weight: 500; min-width: 65px;
+      flex-shrink: 0;
+    }
+    .news-text { font-size: 0.88rem; color: #4A4640; }
+    .news-text a { color: #3B6BA5; border-bottom: 1px dashed #B8CDE0; }
+    .news-text a:hover { border-bottom-color: #3B6BA5; }
+    .vbadge {
+      display: inline-block; padding: 0.08rem 0.4rem; border-radius: 3px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem; font-weight: 500;
+      background: #E3ECF6; color: #3B6BA5;
+    }
+    .vbadge.top { background: #F0E8D4; color: #8B7234; }
+
+    /* ===== FEATURED RESEARCH ===== */
+    .feat-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;
+    }
+    .feat-card {
+      background: #FDFCFA;
+      border: 1px solid #E0DBD3;
+      border-radius: 10px;
+      padding: 1.4rem 1.5rem;
+      transition: all 0.25s;
+      position: relative;
+    }
+    .feat-card:hover {
+      border-color: #C8C1B5;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.05);
+      transform: translateY(-1px);
+    }
+    .feat-topic {
+      display: inline-block; padding: 0.15rem 0.55rem; border-radius: 3px;
+      font-size: 0.66rem; font-weight: 700; letter-spacing: 0.04em;
+      text-transform: uppercase; margin-bottom: 0.7rem;
+    }
+    .ft-safety { background: #F5E3E3; color: #A54B4B; }
+    .ft-agents { background: #EDE3F5; color: #7B52A5; }
+    .ft-adapt { background: #E3ECF6; color: #3B6BA5; }
+    .ft-health { background: #E1EDE0; color: #4A6741; }
+    .ft-device { background: #F0E8D4; color: #8B7234; }
+
+    .feat-card h3 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1rem; font-weight: 400; color: #1A1815; line-height: 1.4;
+      margin-bottom: 0.35rem;
+    }
+    .feat-venue {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.73rem; color: #9A948A; font-weight: 500; margin-bottom: 0.5rem;
+    }
+    .feat-venue a { color: #7B52A5; border-bottom: 1px dashed rgba(123,82,165,0.3); }
+    .feat-venue a:hover { border-bottom-style: solid; }
+    .feat-desc {
+      font-size: 0.84rem; color: #6A645C; line-height: 1.65; margin-bottom: 0.9rem;
+    }
+    .feat-desc em { font-style: italic; color: #4A4640; }
+    .feat-desc .kw { font-weight: 600; color: #3B6BA5; }
+    .feat-links { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .feat-links a {
+      display: inline-flex; align-items: center; gap: 0.25rem;
+      padding: 0.25rem 0.55rem; border-radius: 4px;
+      font-size: 0.73rem; font-weight: 600;
+      background: #F0ECE6; color: #6A645C;
+      border: 1px solid #E0DBD3;
+      transition: all 0.2s;
+    }
+    .feat-links a:hover { background: #E8E3DB; color: #2D2A26; }
+    .feat-links a i { font-size: 0.68rem; }
+
+    /* ===== PUBLICATIONS ===== */
+    .pub-list { display: flex; flex-direction: column; gap: 0.3rem; }
+    .pub-row {
+      display: grid; grid-template-columns: 82px 1fr; gap: 1rem;
+      padding: 0.7rem 0.8rem; border-radius: 6px;
+      transition: background 0.15s;
+    }
+    .pub-row:hover { background: rgba(0,0,0,0.015); }
+    .pub-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem; font-weight: 500; color: #7A756D;
+      padding-top: 0.15rem;
+      text-align: right;
+    }
+    .pub-body h4 {
+      font-size: 0.9rem; font-weight: 600; color: #2D2A26; line-height: 1.4;
+    }
+    .pub-body h4 a { transition: color 0.2s; }
+    .pub-body h4 a:hover { color: #3B6BA5; }
+    .pub-body .authors {
+      font-size: 0.78rem; color: #7A756D; margin-top: 0.15rem;
+    }
+    .pub-body .authors .me { color: #3B6BA5; font-weight: 600; }
+    .pub-body .plinks { margin-top: 0.3rem; }
+    .pub-body .plinks a {
+      font-size: 0.72rem; font-weight: 600; color: #9A948A; margin-right: 0.6rem;
+      transition: color 0.2s;
+    }
+    .pub-body .plinks a:hover { color: #3B6BA5; }
+    .pub-note { font-size: 0.7rem; font-weight: 700; color: #A54B4B; }
+    .scholar-link {
+      margin-top: 1.2rem; text-align: center;
+      font-size: 0.88rem; color: #7A756D;
+    }
+    .scholar-link a { color: #3B6BA5; font-weight: 600; border-bottom: 1px dashed #B8CDE0; }
+    .scholar-link a:hover { border-bottom-color: #3B6BA5; }
+
+    /* ===== EXPERIENCE ===== */
+    .exp-list { display: flex; flex-direction: column; gap: 1rem; }
+    .exp-card {
+      display: grid; grid-template-columns: 6px 1fr; gap: 1.2rem;
+      align-items: stretch;
+    }
+    .exp-line {
+      width: 6px; border-radius: 3px;
+      background: #D4CFC6;
+    }
+    .exp-line.active { background: linear-gradient(180deg, #4A6741, #8BAE82); }
+    .exp-body {
+      padding: 1rem 1.2rem; border-radius: 8px;
+      background: #FDFCFA; border: 1px solid #E0DBD3;
+      transition: all 0.2s;
+    }
+    .exp-body:hover { border-color: #C8C1B5; }
+    .exp-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; }
+    .exp-org { font-weight: 700; font-size: 0.98rem; color: #1A1815; }
+    .exp-role { font-size: 0.85rem; color: #4A6741; font-weight: 500; }
+    .exp-when {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.73rem; color: #9A948A; font-weight: 500;
+    }
+    .exp-what { font-size: 0.84rem; color: #6A645C; margin-top: 0.35rem; }
+
+    /* ===== EDUCATION ===== */
+    .edu-grid { display: flex; flex-direction: column; gap: 0.8rem; }
+    .edu-row {
+      display: grid; grid-template-columns: 1fr auto; gap: 2rem;
+      padding: 0.8rem 1rem; border-radius: 6px;
+      border: 1px solid #E8E3DB;
+      background: #FDFCFA;
+    }
+    .edu-school { font-weight: 700; font-size: 0.95rem; color: #1A1815; }
+    .edu-detail { font-size: 0.84rem; color: #6A645C; }
+    .edu-year {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem; color: #9A948A; font-weight: 500;
+      white-space: nowrap; padding-top: 0.1rem;
+    }
+    .incomplete-tag {
+      display: inline-block; padding: 0.05rem 0.4rem; border-radius: 3px;
+      font-size: 0.68rem; font-weight: 600;
+      background: #F0E8D4; color: #8B7234;
+      margin-left: 0.3rem;
+    }
+
+    /* ===== AWARDS ===== */
+    .awards-flex {
+      display: flex; flex-wrap: wrap; gap: 0.8rem;
+    }
+    .award-chip {
+      padding: 0.65rem 1rem; border-radius: 8px;
+      background: #FDFCFA; border: 1px solid #E0DBD3;
+      flex: 1 1 280px; max-width: 50%;
+      transition: all 0.2s;
+    }
+    .award-chip:hover { border-color: #C8C1B5; }
+    .award-yr {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem; color: #9A948A; font-weight: 500;
+    }
+    .award-name { font-size: 0.88rem; font-weight: 600; color: #2D2A26; margin-top: 0.1rem; }
+    .award-from { font-size: 0.76rem; color: #7A756D; }
+
+    /* ===== SERVICE ===== */
+    .service-wrap {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+    }
+    .srv-col h3 {
+      font-size: 0.82rem; font-weight: 700; color: #7A756D;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      margin-bottom: 0.7rem;
+    }
+    .stag {
+      display: inline-block; padding: 0.22rem 0.55rem; margin: 0.15rem;
+      border-radius: 4px; font-size: 0.76rem; font-weight: 500;
+      background: #EDEAE4; color: #5A5347;
+    }
+    .stag.gold { background: #F0E8D4; color: #8B7234; font-weight: 700; }
+
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center; padding: 2.5rem 2rem;
+      border-top: 1px solid #E0DBD3;
+      margin-top: 1rem;
+    }
+    .footer-icons { display: flex; justify-content: center; gap: 1rem; margin-bottom: 0.8rem; }
+    .footer-icons a {
+      width: 36px; height: 36px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: #EDEAE4; color: #7A756D; font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .footer-icons a:hover { background: #D4CFC6; color: #2D2A26; }
+    footer p { font-size: 0.78rem; color: #9A948A; }
+
+    /* ===== DIVIDER ===== */
+    .sep {
+      max-width: 980px; margin: 0 auto; padding: 0 2rem;
+    }
+    .sep-line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #D4CFC6, transparent);
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0; transform: translateY(18px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; padding-top: 5.5rem; text-align: center; }
+      .avatar-col { position: static; display: flex; flex-direction: column; align-items: center; }
+      .avatar-frame { width: 150px; height: 190px; }
+      .hero-content h1 { font-size: 2.1rem; }
+      .feat-grid { grid-template-columns: 1fr; }
+      .service-wrap { grid-template-columns: 1fr; }
+      .awards-flex .award-chip { max-width: 100%; }
+      .nav-links { gap: 1rem; }
+      .nav-links a { font-size: 0.72rem; }
+      .pub-row { grid-template-columns: 1fr; }
+      .pub-badge { text-align: left; }
+    }
+    @media (max-width: 480px) {
+      .hero-content h1 { font-size: 1.7rem; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Yunbei Zhang</div>
+    <div class="nav-links">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="avatar-col">
+    <div class="avatar-frame">
+      <img src="./assets/img/avatar.jpg" alt="Yunbei Zhang">
+    </div>
+    <div class="avatar-socials">
+      <a href="https://scholar.google.com/citations?user=tVb54uUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://github.com/yunbeizhang" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/zybeich" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="assets/files/YunbeiZhang_CV.pdf" target="_blank" title="CV"><i class="ai ai-cv"></i></a>
+    </div>
+  </div>
+  <div class="hero-content">
+    <h1>Yunbei Zhang</h1>
+    <p class="hero-affil">
+      Ph.D. Candidate at Tulane&ensp;·&ensp;Currently at <a href="https://www.ornl.gov/" target="_blank" class="exp-highlight">Oak Ridge National Lab</a>&ensp;·&ensp;Previously at <span class="exp-highlight">Amazon</span>, <a href="https://www.kla.com/" target="_blank" class="exp-highlight">KLA</a>
+    </p>
+    <p class="hero-bio">
+      My research aims to develop <strong>trustworthy, efficient, and adaptive</strong> AI systems,
+      focusing on <strong>inference-time learning and reasoning</strong> in settings where neither ground-truth labels nor verified rewards are available,
+      <strong>safety and red-teaming</strong> of frontier multimodal models,
+      and <strong>efficient model adaptation</strong> for both Model-as-a-Service (MaaS) APIs and on-device deployment.
+      I also work on <strong>post-training, reasoning, and planning</strong> for large language and vision-language models.
+    </p>
+    <div class="research-tags">
+      <span class="tag blue">Inference-Time Learning</span>
+      <span class="tag rose">AI Safety</span>
+      <span class="tag green">MLLM Reasoning &amp; Planning</span>
+      <span class="tag amber">MaaS &amp; On-Device</span>
+    </div>
+    <div class="collab-note">
+      <strong>Open to research internships and collaborations.</strong>
+      If my work resonates with your interests, I'd be delighted to connect: yunbeizhang.ml [at] gmail.com
+    </div>
+  </div>
+</div>
+
+<div class="sep"><div class="sep-line"></div></div>
+
+<!-- NEWS -->
+<section id="news" class="reveal">
+  <div class="section-head">
+    <h2>News</h2>
+  </div>
+  <div class="news-scroll">
+    <div class="news-item">
+      <span class="news-date">Feb '26</span>
+      <span class="news-text">New preprint: <a href="https://yunbeizhang.github.io/agents-in-the-wild/" target="_blank">Agents in the Wild</a> studies safety and social dynamics on an AI-only platform</span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Feb '26</span>
+      <span class="news-text">New preprint: <a href="https://yunbeizhang.github.io/MM-Plan/" target="_blank">Visual Exclusivity Attacks</a> introduces a new threat model for multimodal red-teaming</span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Jan '26</span>
+      <span class="news-text">Joined <strong>Oak Ridge National Laboratory</strong> as Research Scientist Intern</span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Jan '26</span>
+      <span class="news-text">Survey on <a href="https://arxiv.org/abs/2510.13219" target="_blank">Prompt-based Adaptation in Vision Models</a> accepted to <span class="vbadge">TMLR</span></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Jan '26</span>
+      <span class="news-text">Invited reviewer for <strong>ECCV 2026</strong> and <strong>ICML 2026</strong></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Jan '26</span>
+      <span class="news-text">One paper accepted to <span class="vbadge">ICASSP 2026</span></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Dec '25</span>
+      <span class="news-text">Received <a href="https://lambda.ai/research" target="_blank"><strong>Lambda Research Grant</strong></a></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Oct '25</span>
+      <span class="news-text">Awarded <span class="vbadge top">Top Reviewer</span> at NeurIPS 2025</span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Oct '25</span>
+      <span class="news-text">Invited reviewer for <strong>CVPR 2026</strong></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Sep '25</span>
+      <span class="news-text">Paper accepted to <span class="vbadge">NeurIPS 2025</span>, see you in San Diego!</span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Sep '25</span>
+      <span class="news-text">Joined <strong>Amazon</strong> as Applied Scientist Intern</span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Sep '25</span>
+      <span class="news-text">Invited reviewer for <strong>ICLR 2026</strong></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Aug '25</span>
+      <span class="news-text">Passed <strong>PhD Oral Qualification Exam</strong></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Jul '25</span>
+      <span class="news-text">Two papers accepted to <span class="vbadge">ACM MM 2025</span></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">Jun '25</span>
+      <span class="news-text">One paper accepted to <span class="vbadge">USENIX Security 2025</span></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">May '25</span>
+      <span class="news-text">Joined <strong>KLA Corporation</strong> as ML Research Intern</span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">May '25</span>
+      <span class="news-text">One paper accepted to <span class="vbadge">ICML 2025</span></span>
+    </div>
+  </div>
+</section>
+
+<div class="sep"><div class="sep-line"></div></div>
+
+<!-- FEATURED RESEARCH -->
+<section id="research" class="reveal">
+  <div class="section-head">
+    <h2>Featured Research</h2>
+  </div>
+  <div class="feat-grid">
+
+    <!-- Row 1: Safety & Agents -->
+    <div class="feat-card">
+      <span class="feat-topic ft-safety">AI Safety · Red-Teaming</span>
+      <h3>Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning</h3>
+      <div class="feat-venue">Under Review · Amazon Collaboration</div>
+      <p class="feat-desc">Introduces <em>Visual Exclusivity</em>, a threat model where harm emerges only through <span class="kw">visual reasoning</span>. MM-Plan uses <span class="kw">agentic planning</span> to achieve 2-5x improvement over baselines on 8 frontier MLLMs including GPT-5 and Claude 4.5 Sonnet. Includes VE-Safety, a 440-instance benchmark across 15 safety categories.</p>
+      <div class="feat-links">
+        <a href="https://yunbeizhang.github.io/MM-Plan/" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+        <a href="https://github.com/yunbeizhang/MM-Plan" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <a href="https://yunbeizhang.github.io/MM-Plan/" target="_blank"><i class="fas fa-globe"></i> Project</a>
+        <a href="https://huggingface.co/datasets/zybeich/VE-Safety" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+      </div>
+    </div>
+
+    <div class="feat-card">
+      <span class="feat-topic ft-agents">Agent Safety · AI Social Dynamics</span>
+      <h3>Agents in the Wild: Safety, Society, and the Illusion of Sociality on Moltbook</h3>
+      <div class="feat-venue">Under Review</div>
+      <p class="feat-desc">First large-scale empirical study of an <span class="kw">AI-only social platform</span>: 27K agents produced 137K posts and 345K comments over 9 days. Reveals emergent coordination, crypto manipulation, and security leaks, with 28.7% of all posts flagged as safety-related.</p>
+      <div class="feat-links">
+        <a href="https://yunbeizhang.github.io/agents-in-the-wild/" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+        <a href="https://github.com/yunbeizhang/agents-in-the-wild" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <a href="https://yunbeizhang.github.io/agents-in-the-wild/" target="_blank"><i class="fas fa-globe"></i> Project</a>
+        <a href="https://huggingface.co/datasets/SimulaMet/moltbook-observatory-archive" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+      </div>
+    </div>
+
+    <!-- Row 2: MaaS & On-Device -->
+    <div class="feat-card">
+      <span class="feat-topic ft-device">MaaS · On-Device</span>
+      <h3>Prime Once, then Reprogram Locally: Efficient Alternative to Black-Box Model Reprogramming</h3>
+      <div class="feat-venue">Under Review</div>
+      <p class="feat-desc">A two-stage framework for <span class="kw">MaaS VLM adaptation</span>: global priming establishes transferable prompts once, then local reprogramming adapts per instance. Eliminates repeated API calls while matching or exceeding full-access methods across 12 benchmarks.</p>
+      <div class="feat-links">
+        <a href="https://openreview.net/pdf?id=Hic8PwzlBY" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+        <a href="https://github.com/yunbeizhang" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <div class="feat-card">
+      <span class="feat-topic ft-device">Black-Box · TTA</span>
+      <h3>Adapting in the Dark: Towards Stable and Efficient Black-Box Test-Time Adaptation</h3>
+      <div class="feat-venue">Under Review</div>
+      <p class="feat-desc">Tackles <span class="kw">test-time adaptation</span> when model internals are inaccessible (MaaS or on-device). BETA introduces two-phase optimization with <span class="kw">zeroth-order methods</span> and stability constraints, adapting VLMs reliably without labels, rewards, or gradient access.</p>
+      <div class="feat-links">
+        <a href="https://openreview.net/pdf?id=KBtySUdWuH" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+        <a href="https://github.com/yunbeizhang" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <!-- Row 3: TTA & Healthcare -->
+    <div class="feat-card">
+      <span class="feat-topic ft-adapt">Continual Learning · TTA</span>
+      <h3>DPCore: Dynamic Prompt Coreset for Continual Test-Time Adaptation</h3>
+      <div class="feat-venue">ICML 2025</div>
+      <p class="feat-desc">A lightweight <span class="kw">prompt-based</span> method for adapting pre-trained models to continually shifting domains at test time, without source data, labels, or rewards. Dynamic prompt coresets preserve past knowledge while adapting efficiently to new distributions.</p>
+      <div class="feat-links">
+        <a href="https://arxiv.org/abs/2406.10737" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+        <a href="https://github.com/yunbeizhang/DPCore" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <div class="feat-card">
+      <span class="feat-topic ft-health">Medical AI · RLHF</span>
+      <h3>Doctor Approved: Generating Medically Accurate Skin Disease Images via AI-Expert Feedback</h3>
+      <div class="feat-venue">NeurIPS 2025</div>
+      <p class="feat-desc">MAGIC aligns <span class="kw">diffusion models</span> with medical expertise using attribute-level checklists and <span class="kw">Direct Preference Optimization</span>. Generates clinically accurate dermatology images without training domain-specific multimodal models.</p>
+      <div class="feat-links">
+        <a href="https://arxiv.org/abs/2506.12323" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+        <a href="https://github.com/janet-sw/MAGIC" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="sep"><div class="sep-line"></div></div>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="reveal">
+  <div class="section-head">
+    <h2>Other Publications</h2>
+    <span class="aside">* = equal contribution</span>
+  </div>
+  <div class="pub-list">
+
+    <div class="pub-row">
+      <div class="pub-badge">TMLR '26</div>
+      <div class="pub-body">
+        <h4>Prompt-based Adaptation in Large-scale Vision Models: A Survey</h4>
+        <p class="authors"><span class="me">Y. Zhang</span>*, X. Xiao*, L. Zhao*, et al.</p>
+        <div class="plinks">
+          <a href="https://arxiv.org/pdf/2510.13219" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://github.com/yunbeizhang/Awesome-Visual-Prompt-Tuning" target="_blank"><i class="fab fa-github"></i> Awesome List</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">ICASSP '26</div>
+      <div class="pub-body">
+        <h4>CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for LLMs</h4>
+        <p class="authors">Z. Wang, M. Mo, X. Xiao, C. Liu, C. Ma, <span class="me">Y. Zhang</span>, et al.</p>
+        <div class="plinks">
+          <a href="https://arxiv.org/pdf/2510.15962" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">ACM MM '25</div>
+      <div class="pub-body">
+        <h4>Visual Instance-aware Prompt Tuning</h4>
+        <p class="authors"><span class="me">Y. Zhang</span>*, X. Xiao*, X. Li, T. Wang, X. Wang, Y. Wei, J. Hamm, M. Xu</p>
+        <div class="plinks">
+          <a href="https://arxiv.org/pdf/2507.07796" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">ACM MM '25</div>
+      <div class="pub-body">
+        <h4>eSkinHealth: A Multimodal Dataset for Neglected Tropical Skin Diseases</h4>
+        <p class="authors">J. Wang, X. Hu, <span class="me">Y. Zhang</span>, et al.</p>
+        <div class="plinks">
+          <a href="https://arxiv.org/pdf/2508.18608" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://github.com/janet-sw/eSkinHealth" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">USENIX '25</div>
+      <div class="pub-body">
+        <h4>SoK: Can Synthetic Images Replace Real Data? A Survey of Utility and Privacy</h4>
+        <p class="authors">Y. Cheung, <span class="me">Y. Zhang</span>, N. Marrouche, J. Hamm</p>
+        <div class="plinks">
+          <a href="https://arxiv.org/pdf/2506.19360" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">WACV '25</div>
+      <div class="pub-body">
+        <h4>OT-VP: Optimal Transport-guided Visual Prompting for Test-Time Adaptation</h4>
+        <p class="authors"><span class="me">Y. Zhang</span>, A. Mehra, J. Hamm &ensp;<span class="pub-note">Oral</span></p>
+        <div class="plinks">
+          <a href="https://arxiv.org/pdf/2407.09498" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://github.com/yunbeizhang/OT-VP" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">NeurIPS '24</div>
+      <div class="pub-body">
+        <h4>Understanding the Transferability of Representations via Task-Relatedness</h4>
+        <p class="authors">A. Mehra, <span class="me">Y. Zhang</span>, J. Hamm</p>
+        <div class="plinks">
+          <a href="https://arxiv.org/pdf/2307.00823" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://github.com/hammlab/TaskTransferAnalysis" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="scholar-link">
+    Full list on <a href="https://scholar.google.com/citations?user=tVb54uUAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+  </p>
+</section>
+
+<div class="sep"><div class="sep-line"></div></div>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="reveal">
+  <div class="section-head">
+    <h2>Experience</h2>
+  </div>
+  <div class="exp-list">
+    <div class="exp-card">
+      <div class="exp-line active"></div>
+      <div class="exp-body">
+        <div class="exp-top">
+          <div>
+            <div class="exp-org">Oak Ridge National Laboratory</div>
+            <div class="exp-role">Research Scientist Intern</div>
+          </div>
+          <div class="exp-when">Jan 2026 –Apr 2026</div>
+        </div>
+        <p class="exp-what">Uncertainty Quantification for Large Foundation Models and Multi-modal LLMs</p>
+      </div>
+    </div>
+    <div class="exp-card">
+      <div class="exp-line"></div>
+      <div class="exp-body">
+        <div class="exp-top">
+          <div>
+            <div class="exp-org">Amazon</div>
+            <div class="exp-role">Applied Scientist Intern</div>
+          </div>
+          <div class="exp-when">Sep 2025 –Dec 2025</div>
+        </div>
+        <p class="exp-what">Multi-modal LLM RL-based post-training, safety alignment, and automatic red-teaming via agentic planning</p>
+      </div>
+    </div>
+    <div class="exp-card">
+      <div class="exp-line"></div>
+      <div class="exp-body">
+        <div class="exp-top">
+          <div>
+            <div class="exp-org">KLA Corporation</div>
+            <div class="exp-role">ML Research Intern</div>
+          </div>
+          <div class="exp-when">May 2025 –Aug 2025</div>
+        </div>
+        <p class="exp-what">Vision Foundation Model knowledge distillation for compact semiconductor defect detection</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"><div class="sep-line"></div></div>
+
+<!-- EDUCATION -->
+<section class="reveal">
+  <div class="section-head">
+    <h2>Education</h2>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-row">
+      <div>
+        <div class="edu-school">Tulane University</div>
+        <div class="edu-detail">Ph.D. in Computer Science · Advisor: Prof. Jihun Hamm</div>
+      </div>
+      <div class="edu-year">2022 –Present</div>
+    </div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-school">Osaka University</div>
+        <div class="edu-detail">B.S. in Mathematics · Award of Excellence · Multiple Merit Scholarships</div>
+      </div>
+      <div class="edu-year">2018 –2022</div>
+    </div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-school">Peking University <span class="incomplete-tag">Withdrawn</span></div>
+        <div class="edu-detail">Withdrew after two years to pursue an independent academic path abroad</div>
+      </div>
+      <div class="edu-year">2013 –2015</div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"><div class="sep-line"></div></div>
+
+<!-- AWARDS -->
+<section id="awards" class="reveal">
+  <div class="section-head">
+    <h2>Honors &amp; Awards</h2>
+  </div>
+  <div class="awards-flex">
+    <div class="award-chip">
+      <div class="award-yr">2025</div>
+      <div class="award-name">Lambda Research Grant</div>
+      <div class="award-from">Lambda</div>
+    </div>
+    <div class="award-chip">
+      <div class="award-yr">2025</div>
+      <div class="award-name">NeurIPS Top Reviewer</div>
+      <div class="award-from">NeurIPS 2025</div>
+    </div>
+    <div class="award-chip">
+      <div class="award-yr">2024</div>
+      <div class="award-name">Outstanding Teaching Assistant</div>
+      <div class="award-from">Tulane University</div>
+    </div>
+    <div class="award-chip">
+      <div class="award-yr">2019</div>
+      <div class="award-name">Award of Excellence</div>
+      <div class="award-from">Osaka University</div>
+    </div>
+    <div class="award-chip">
+      <div class="award-yr">2018–21</div>
+      <div class="award-name">Government &amp; Merit Scholarships</div>
+      <div class="award-from">Ministry of Education, Japan</div>
+    </div>
+    <div class="award-chip">
+      <div class="award-yr">2021</div>
+      <div class="award-name">Ichikawa International Scholarship</div>
+      <div class="award-from">Osaka University</div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"><div class="sep-line"></div></div>
+
+<!-- SERVICE -->
+<section class="reveal">
+  <div class="section-head">
+    <h2>Academic Service</h2>
+  </div>
+  <div class="service-wrap">
+    <div class="srv-col">
+      <h3>Conference Reviewer</h3>
+      <span class="stag gold">NeurIPS 2025 (Top Reviewer)</span>
+      <span class="stag">ICLR 2025–2026</span>
+      <span class="stag">CVPR 2026</span>
+      <span class="stag">ECCV 2026</span>
+      <span class="stag">ICML 2026</span>
+      <span class="stag">ACM MM 2025</span>
+      <span class="stag">WACV 2025</span>
+    </div>
+    <div class="srv-col">
+      <h3>Journal Reviewer</h3>
+      <span class="stag">Transactions on Machine Learning Research (TMLR)</span>
+      <span class="stag">J. Imaging Informatics in Medicine</span>
+      <br><br>
+      <h3>Community</h3>
+      <span class="stag">NeurIPS 2023 Outreach Volunteer</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-icons">
+    <a href="https://scholar.google.com/citations?user=tVb54uUAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i></a>
+    <a href="https://github.com/yunbeizhang" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/zybeich" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+  <p>&copy; 2026 Yunbei Zhang</p>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
