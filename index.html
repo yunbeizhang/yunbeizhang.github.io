@@ -164,7 +164,7 @@
 
     /* ===== FEATURED RESEARCH ===== */
     .feat-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;
+      display: grid; grid-template-columns: 1fr; gap: 1.2rem;
     }
     .feat-card {
       background: #FDFCFA;
@@ -173,6 +173,20 @@
       padding: 1.4rem 1.5rem;
       transition: all 0.25s;
       position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      align-items: start;
+    }
+    .feat-img {
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #E0DBD3;
+      grid-row: 1 / -1;
+    }
+    .feat-text {
+      display: flex;
+      flex-direction: column;
     }
     .feat-card:hover {
       border-color: #C8C1B5;
@@ -377,6 +391,8 @@
       .avatar-frame { width: 150px; height: 190px; }
       .hero-content h1 { font-size: 2.1rem; }
       .feat-grid { grid-template-columns: 1fr; }
+      .feat-card { grid-template-columns: 1fr; }
+      .feat-img { grid-row: auto; }
       .service-wrap { grid-template-columns: 1fr; }
       .awards-flex .award-chip { max-width: 100%; }
       .nav-links { gap: 1rem; }
@@ -544,76 +560,50 @@
   </div>
   <div class="feat-grid">
 
-    <!-- Row 1: Safety & Agents -->
+    <!-- 1. Visual Exclusivity Attacks -->
     <div class="feat-card">
-      <span class="feat-topic ft-safety">AI Safety · Red-Teaming</span>
-      <h3>Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning</h3>
-      <div class="feat-venue">Under Review · Amazon Collaboration</div>
-      <p class="feat-desc">Introduces <em>Visual Exclusivity</em>, a threat model where harm emerges only through <span class="kw">visual reasoning</span>. MM-Plan uses <span class="kw">agentic planning</span> to achieve 2-5x improvement over baselines on 8 frontier MLLMs including GPT-5 and Claude 4.5 Sonnet. Includes VE-Safety, a 440-instance benchmark across 15 safety categories.</p>
-      <div class="feat-links">
-        <a href="https://yunbeizhang.github.io/MM-Plan/" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
-        <a href="https://github.com/yunbeizhang/MM-Plan" target="_blank"><i class="fab fa-github"></i> Code</a>
-        <a href="https://yunbeizhang.github.io/MM-Plan/" target="_blank"><i class="fas fa-globe"></i> Project</a>
-        <a href="https://huggingface.co/datasets/zybeich/VE-Safety" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+      <img src="./assets/img/mm_plan_fig.png" alt="MM-Plan workflow" class="feat-img">
+      <div class="feat-text">
+        <span class="feat-topic ft-safety">AI Safety · Red-Teaming</span>
+        <h3>Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning</h3>
+        <div class="feat-venue">Under Review · Work done at Amazon</div>
+        <p class="feat-desc">Introduces <em>Visual Exclusivity</em>, a threat model where harm emerges only through <span class="kw">visual reasoning</span>. MM-Plan uses <span class="kw">agentic planning</span> to achieve 2-5x improvement over baselines on 8 frontier MLLMs including GPT-5 and Claude 4.5 Sonnet. Includes VE-Safety, a 440-instance benchmark across 15 safety categories.</p>
+        <div class="feat-links">
+          <a href="https://yunbeizhang.github.io/MM-Plan/" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+          <a href="https://github.com/yunbeizhang/MM-Plan" target="_blank"><i class="fab fa-github"></i> Code</a>
+          <a href="https://yunbeizhang.github.io/MM-Plan/" target="_blank"><i class="fas fa-globe"></i> Project</a>
+          <a href="https://huggingface.co/datasets/zybeich/VE-Safety" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+        </div>
       </div>
     </div>
 
+    <!-- 2. Prime Once, then Reprogram Locally (CVPR 2026) -->
     <div class="feat-card">
-      <span class="feat-topic ft-agents">Agent Safety · AI Social Dynamics</span>
-      <h3>Agents in the Wild: Safety, Society, and the Illusion of Sociality on Moltbook</h3>
-      <div class="feat-venue">Under Review</div>
-      <p class="feat-desc">First large-scale empirical study of an <span class="kw">AI-only social platform</span>: 27K agents produced 137K posts and 345K comments over 9 days. Reveals emergent coordination, crypto manipulation, and security leaks, with 28.7% of all posts flagged as safety-related.</p>
-      <div class="feat-links">
-        <a href="https://arxiv.org/abs/2602.13284" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
-        <a href="https://github.com/yunbeizhang/agents-in-the-wild" target="_blank"><i class="fab fa-github"></i> Code</a>
-        <a href="https://yunbeizhang.github.io/agents-in-the-wild/" target="_blank"><i class="fas fa-globe"></i> Project</a>
-        <a href="https://huggingface.co/datasets/SimulaMet/moltbook-observatory-archive" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+      <img src="./assets/img/ares_fig.png" alt="AReS workflow" class="feat-img">
+      <div class="feat-text">
+        <span class="feat-topic ft-device">MaaS · On-Device</span>
+        <h3>Prime Once, then Reprogram Locally: Efficient Alternative to Black-Box Model Reprogramming</h3>
+        <div class="feat-venue">CVPR 2026</div>
+        <p class="feat-desc">A two-stage framework for <span class="kw">MaaS VLM adaptation</span>: global priming establishes transferable prompts once, then local reprogramming adapts per instance. Eliminates repeated API calls while matching or exceeding full-access methods across 12 benchmarks.</p>
+        <div class="feat-links">
+          <a href="https://openreview.net/pdf?id=Hic8PwzlBY" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+          <a href="https://github.com/yunbeizhang" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
       </div>
     </div>
 
-    <!-- Row 2: MaaS & On-Device -->
+    <!-- 3. DPCore -->
     <div class="feat-card">
-      <span class="feat-topic ft-device">MaaS · On-Device</span>
-      <h3>Prime Once, then Reprogram Locally: Efficient Alternative to Black-Box Model Reprogramming</h3>
-      <div class="feat-venue">Under Review</div>
-      <p class="feat-desc">A two-stage framework for <span class="kw">MaaS VLM adaptation</span>: global priming establishes transferable prompts once, then local reprogramming adapts per instance. Eliminates repeated API calls while matching or exceeding full-access methods across 12 benchmarks.</p>
-      <div class="feat-links">
-        <a href="https://openreview.net/pdf?id=Hic8PwzlBY" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
-        <a href="https://github.com/yunbeizhang" target="_blank"><i class="fab fa-github"></i> Code</a>
-      </div>
-    </div>
-
-    <div class="feat-card">
-      <span class="feat-topic ft-device">Black-Box · TTA</span>
-      <h3>Adapting in the Dark: Towards Stable and Efficient Black-Box Test-Time Adaptation</h3>
-      <div class="feat-venue">Under Review</div>
-      <p class="feat-desc">Tackles <span class="kw">test-time adaptation</span> when model internals are inaccessible (MaaS or on-device). BETA introduces two-phase optimization with <span class="kw">zeroth-order methods</span> and stability constraints, adapting VLMs reliably without labels, rewards, or gradient access.</p>
-      <div class="feat-links">
-        <a href="https://openreview.net/pdf?id=KBtySUdWuH" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
-        <a href="https://github.com/yunbeizhang" target="_blank"><i class="fab fa-github"></i> Code</a>
-      </div>
-    </div>
-
-    <!-- Row 3: TTA & Healthcare -->
-    <div class="feat-card">
-      <span class="feat-topic ft-adapt">Continual Learning · TTA</span>
-      <h3>DPCore: Dynamic Prompt Coreset for Continual Test-Time Adaptation</h3>
-      <div class="feat-venue">ICML 2025</div>
-      <p class="feat-desc">A lightweight <span class="kw">prompt-based</span> method for adapting pre-trained models to continually shifting domains at test time, without source data, labels, or rewards. Dynamic prompt coresets preserve past knowledge while adapting efficiently to new distributions.</p>
-      <div class="feat-links">
-        <a href="https://arxiv.org/abs/2406.10737" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
-        <a href="https://github.com/yunbeizhang/DPCore" target="_blank"><i class="fab fa-github"></i> Code</a>
-      </div>
-    </div>
-
-    <div class="feat-card">
-      <span class="feat-topic ft-health">Medical AI · RLHF</span>
-      <h3>Doctor Approved: Generating Medically Accurate Skin Disease Images via AI-Expert Feedback</h3>
-      <div class="feat-venue">NeurIPS 2025</div>
-      <p class="feat-desc">MAGIC aligns <span class="kw">diffusion models</span> with medical expertise using attribute-level checklists and <span class="kw">Direct Preference Optimization</span>. Generates clinically accurate dermatology images without training domain-specific multimodal models.</p>
-      <div class="feat-links">
-        <a href="https://arxiv.org/abs/2506.12323" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
-        <a href="https://github.com/janet-sw/MAGIC" target="_blank"><i class="fab fa-github"></i> Code</a>
+      <img src="./assets/img/dpcore_fig.png" alt="DPCore framework" class="feat-img">
+      <div class="feat-text">
+        <span class="feat-topic ft-adapt">Continual Learning · TTA</span>
+        <h3>DPCore: Dynamic Prompt Coreset for Continual Test-Time Adaptation</h3>
+        <div class="feat-venue">ICML 2025</div>
+        <p class="feat-desc">A lightweight <span class="kw">prompt-based</span> method for adapting pre-trained models to continually shifting domains at test time, without source data, labels, or rewards. Dynamic prompt coresets preserve past knowledge while adapting efficiently to new distributions.</p>
+        <div class="feat-links">
+          <a href="https://arxiv.org/abs/2406.10737" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+          <a href="https://github.com/yunbeizhang/DPCore" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
       </div>
     </div>
 
@@ -642,6 +632,31 @@
     </div>
 
     <div class="pub-row">
+      <div class="pub-badge">Preprint</div>
+      <div class="pub-body">
+        <h4>Agents in the Wild: Safety, Society, and the Illusion of Sociality on Moltbook</h4>
+        <p class="authors"><span class="me">Y. Zhang</span>*, et al.</p>
+        <div class="plinks">
+          <a href="https://arxiv.org/abs/2602.13284" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://github.com/yunbeizhang/agents-in-the-wild" target="_blank"><i class="fab fa-github"></i> Code</a>
+          <a href="https://yunbeizhang.github.io/agents-in-the-wild/" target="_blank"><i class="fas fa-globe"></i> Project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">Preprint</div>
+      <div class="pub-body">
+        <h4>Adapting in the Dark: Towards Stable and Efficient Black-Box Test-Time Adaptation</h4>
+        <p class="authors"><span class="me">Y. Zhang</span>, et al.</p>
+        <div class="plinks">
+          <a href="https://openreview.net/pdf?id=KBtySUdWuH" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://github.com/yunbeizhang" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
       <div class="pub-badge">TMLR '26</div>
       <div class="pub-body">
         <h4>Prompt-based Adaptation in Large-scale Vision Models: A Survey</h4>
@@ -660,6 +675,18 @@
         <p class="authors">Z. Wang, M. Mo, X. Xiao, C. Liu, C. Ma, <span class="me">Y. Zhang</span>, et al.</p>
         <div class="plinks">
           <a href="https://arxiv.org/pdf/2510.15962" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">NeurIPS '25</div>
+      <div class="pub-body">
+        <h4>Doctor Approved: Generating Medically Accurate Skin Disease Images via AI-Expert Feedback</h4>
+        <p class="authors">J. Wang*, <span class="me">Y. Zhang</span>*, et al.</p>
+        <div class="plinks">
+          <a href="https://arxiv.org/abs/2506.12323" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://github.com/janet-sw/MAGIC" target="_blank"><i class="fab fa-github"></i> Code</a>
         </div>
       </div>
     </div>
