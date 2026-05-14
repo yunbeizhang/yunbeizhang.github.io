@@ -102,6 +102,7 @@
     .tag.rose { background: #F5E3E3; color: #A54B4B; }
     .tag.green { background: #E1EDE0; color: #4A6741; }
     .tag.amber { background: #F0E8D4; color: #8B7234; }
+    .tag.purple { background: #EDE3F5; color: #7B52A5; }
 
     .collab-note {
       margin-top: 1.4rem; padding: 0.7rem 1rem; border-radius: 6px;
@@ -445,13 +446,14 @@
       focusing on <strong>inference-time learning and reasoning</strong> in settings where neither ground-truth labels nor verified rewards are available,
       <strong>safety and red-teaming</strong> of frontier multimodal models,
       and <strong>efficient model adaptation</strong> for both Model-as-a-Service (MaaS) APIs and on-device deployment.
-      I also work on <strong>post-training, reasoning, and planning</strong> for large language and vision-language models.
+      I also work on <strong>post-training, reasoning, planning, and agent harness engineering</strong> for large language and vision-language models.
     </p>
     <div class="research-tags">
       <span class="tag blue">Inference-Time Learning</span>
       <span class="tag rose">AI Safety</span>
       <span class="tag green">MLLM Reasoning &amp; Planning</span>
       <span class="tag amber">MaaS &amp; On-Device</span>
+      <span class="tag purple">Agent Harness</span>
     </div>
     <div class="collab-note">
       <strong>Open to research internships and collaborations.</strong>
@@ -468,6 +470,18 @@
     <h2>News</h2>
   </div>
   <div class="news-scroll">
+    <div class="news-item">
+      <span class="news-date">May '26</span>
+      <span class="news-text">Recognized as an <span class="vbadge top">ICML 2026 Gold Reviewer</span></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">May '26</span>
+      <span class="news-text">New preprint is out: <a href="https://openreview.net/pdf?id=eONq7FdiHa" target="_blank">Agent Harness Engineering: A Survey</a></span>
+    </div>
+    <div class="news-item">
+      <span class="news-date">May '26</span>
+      <span class="news-text">New preprint is out: <a href="https://openreview.net/pdf?id=qMjgplILnv" target="_blank">Stop Comparing LLM Agents Without Disclosing the Harness</a>. <a href="https://github.com/yunbeizhang/harness-binding-constraint" target="_blank">Code</a> is released</span>
+    </div>
     <div class="news-item">
       <span class="news-date">Apr '26</span>
       <span class="news-text">🏆 <a href="https://arxiv.org/abs/2604.15609" target="_blank">Adapting in the Dark</a> received <span class="pub-note">Best Paper Award</span> at <span class="vbadge">ICLR 2026</span> TTU Workshop. <a href="https://github.com/yunbeizhang/BETA" target="_blank">Code</a> is released</span>
@@ -588,6 +602,22 @@
   </div>
   <div class="feat-grid">
 
+    <!-- 1. Harness Binding Constraint -->
+    <div class="feat-card">
+      <img src="./assets/img/binding_constraint_thesis.png" alt="The Binding Constraint Thesis" class="feat-img">
+      <div class="feat-text">
+        <span class="feat-topic ft-agents">Agent Harness · Evaluation</span>
+        <h3>Stop Comparing LLM Agents Without Disclosing the Harness</h3>
+        <div class="feat-venue">Preprint, May 2026 &ensp;<span class="pub-note">Position Paper</span></div>
+        <p class="feat-desc">Argues that long-horizon agent scores are jointly produced by the model and the <span class="kw">execution harness</span> that wraps it. The <em>Binding Constraint Thesis</em> formalizes when harness variance can rival or exceed model variance, motivating harness cards and factorial evaluation protocols.</p>
+        <div class="feat-links">
+          <a href="https://openreview.net/pdf?id=qMjgplILnv" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://github.com/yunbeizhang/harness-binding-constraint" target="_blank"><i class="fab fa-github"></i> Code</a>
+          <a href="https://yunbeizhang.github.io/harness-binding-constraint/" target="_blank"><i class="fas fa-globe"></i> Project</a>
+        </div>
+      </div>
+    </div>
+
     <!-- 1. Visual Exclusivity Attacks -->
     <div class="feat-card">
       <img src="./assets/img/mm_plan_fig.png" alt="MM-Plan workflow" class="feat-img">
@@ -647,6 +677,19 @@
     <span class="aside">* = equal contribution</span>
   </div>
   <div class="pub-list">
+
+    <div class="pub-row">
+      <div class="pub-badge">Preprint</div>
+      <div class="pub-body">
+        <h4>Agent Harness Engineering: A Survey</h4>
+        <p class="authors">J. Li*, X. Xiao*, <span class="me">Y. Zhang</span>*, C. Liu*, et al.</p>
+        <div class="plinks">
+          <a href="https://openreview.net/pdf?id=eONq7FdiHa" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://picrew.github.io/LLM-Harness/" target="_blank"><i class="fas fa-globe"></i> Project</a>
+          <a href="https://github.com/Picrew/awesome-agent-harness" target="_blank"><i class="fab fa-github"></i> Awesome List</a>
+        </div>
+      </div>
+    </div>
 
     <div class="pub-row">
       <div class="pub-badge">ACL '26</div>
@@ -908,6 +951,16 @@
   </div>
   <div class="awards-flex">
     <div class="award-chip">
+      <div class="award-yr">2026</div>
+      <div class="award-name">ICML Gold Reviewer</div>
+      <div class="award-from">ICML 2026</div>
+    </div>
+    <div class="award-chip">
+      <div class="award-yr">2026</div>
+      <div class="award-name">Tinker Research Grant</div>
+      <div class="award-from">Thinking Machines Lab</div>
+    </div>
+    <div class="award-chip">
       <div class="award-yr">2025</div>
       <div class="award-name">Lambda Research Grant</div>
       <div class="award-from">Lambda</div>
@@ -954,7 +1007,7 @@
       <span class="stag">ICLR 2025–2026</span>
       <span class="stag">CVPR 2026</span>
       <span class="stag">ECCV 2026</span>
-      <span class="stag">ICML 2026</span>
+      <span class="stag gold">ICML 2026 (Gold Reviewer)</span>
       <span class="stag">ACM MM 2025</span>
       <span class="stag">WACV 2025</span>
     </div>
