@@ -82,10 +82,15 @@
     .hero-affil {
       margin-top: 0.5rem; font-size: 0.95rem; color: #7A756D;
     }
+    .hero-affil > span { display: block; }
     .hero-affil .exp-highlight {
       display: inline-block;
-      font-weight: 600; color: #4A6741;
+      font-weight: 600;
     }
+    .hero-affil .exp-waymo { color: #0165FC; }
+    .hero-affil .exp-ornl { color: rgb(0, 121, 52); }
+    .hero-affil .exp-amazon { color: #FF9900; }
+    .hero-affil .exp-kla { color: rgb(65, 0, 127); }
     .hero-bio {
       margin-top: 1.2rem; font-size: 1rem; color: #4A4640; line-height: 1.85;
     }
@@ -439,7 +444,8 @@
   <div class="hero-content">
     <h1>Yunbei Zhang</h1>
     <p class="hero-affil">
-      Ph.D. Candidate at Tulane&ensp;·&ensp;Currently at <a href="https://waymo.com/" target="_blank" class="exp-highlight">Waymo</a>&ensp;·&ensp;Previously at <a href="https://www.ornl.gov/" target="_blank" class="exp-highlight">Oak Ridge National Lab</a>, <span class="exp-highlight">Amazon</span>, <a href="https://www.kla.com/" target="_blank" class="exp-highlight">KLA</a>
+      <span>Currently at <a href="https://waymo.com/" target="_blank" class="exp-highlight exp-waymo">Waymo</a>&ensp;·&ensp;Ph.D. Candidate at Tulane</span>
+      <span>Previously at <a href="https://www.ornl.gov/" target="_blank" class="exp-highlight exp-ornl">Oak Ridge National Lab</a>, <a href="https://www.amazon.science/" target="_blank" class="exp-highlight exp-amazon">Amazon</a>, <a href="https://www.kla.com/" target="_blank" class="exp-highlight exp-kla">KLA</a></span>
     </p>
     <p class="hero-bio">
       My research aims to develop <strong>trustworthy, efficient, and adaptive</strong> AI systems,
@@ -470,6 +476,10 @@
     <h2>News</h2>
   </div>
   <div class="news-scroll">
+    <div class="news-item">
+      <span class="news-date">Jun '26</span>
+      <span class="news-text">Four papers accepted to <span class="vbadge">ECCV 2026</span>, see you in Sweden.</span>
+    </div>
     <div class="news-item">
       <span class="news-date">Jun '26</span>
       <span class="news-text">Joined <strong>Waymo</strong> as Summer Intern</span>
@@ -685,6 +695,54 @@
     <span class="aside">* = equal contribution</span>
   </div>
   <div class="pub-list">
+
+    <div class="pub-row">
+      <div class="pub-badge">ECCV '26</div>
+      <div class="pub-body">
+        <h4>Wan-R1: Verifiable-Reinforcement Learning for Generalizable Video Reasoning</h4>
+        <p class="authors">Ming Liu, <span class="me">Yunbei Zhang</span>, Shilong Liu, Liwen Wang, Wensheng Zhang</p>
+        <div class="plinks">
+          <a href="https://yunbeizhang.github.io/" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://yunbeizhang.github.io/" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">ECCV '26</div>
+      <div class="pub-body">
+        <h4>Less Tokens, Better Forecasts: Sparse Residual Routing for Efficient Weather Prediction</h4>
+        <p class="authors">Janet Wang, <span class="me">Yunbei Zhang</span>, Lin Zhao, Xi Xiao, Jihun Hamm, Xiao Wang</p>
+        <div class="plinks">
+          <a href="https://yunbeizhang.github.io/" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://yunbeizhang.github.io/" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">ECCV '26</div>
+      <div class="pub-body">
+        <h4>Staying VIGILant: Mitigating Visual Laziness in MLLMs via Information-Theoretic Alignment</h4>
+        <p class="authors">X. Xiao, C. Liu, C.-T. Liao, <span class="me">Y. Zhang</span>, Q. Lan, et al.</p>
+        <div class="plinks">
+          <a href="https://yunbeizhang.github.io/" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://yunbeizhang.github.io/" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-row">
+      <div class="pub-badge">ECCV '26</div>
+      <div class="pub-body">
+        <h4>Auto-Prompting: Layer-Specific Prompt Fusion Discovery via Differentiable Search</h4>
+        <p class="authors">X. Xiao, X. Li, <span class="me">Y. Zhang</span>, C. Han, T. Liu, et al.</p>
+        <div class="plinks">
+          <a href="https://yunbeizhang.github.io/" target="_blank"><i class="ai ai-arxiv"></i> PDF</a>
+          <a href="https://yunbeizhang.github.io/" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
 
     <div class="pub-row">
       <div class="pub-badge">Preprint</div>
