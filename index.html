@@ -4,7 +4,7 @@
 <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yunbei Zhang — Self-Evolving AI, Safety &amp; World Models</title>
+<title>Yunbei Zhang</title>
 <meta name="description" content="Yunbei Zhang researches self-evolving AI, safety and reliability, world models and physical AI, and efficient adaptation.">
 <link rel="icon" type="image/png" href="assets/img/icon.png">
 <link rel="apple-touch-icon" href="assets/img/icon.png">
@@ -440,7 +440,7 @@ const VIDEOS = {
   "flowreview":      ["assets/video/flowreview.mp4",      "assets/video/flowreview-poster.webp"]
 };
 
-/* Selected work (3 per row). media: one image URL or a list (stacked); video: a key of VIDEOS.
+/* Selected work (3 × 3, in this order). media: one image URL or a list (stacked); video: a key of VIDEOS.
    project / pdf / repo become icon links (repo = GitHub "owner/name", with its live star
    count; stars:false hides the count, forks:true adds forks). at: internship where the work was done. */
 const FEATURED = [
@@ -449,16 +449,31 @@ const FEATURED = [
     blurb:"A benchmark that changes the world mid-task. Fourteen robot policies lose 11–26 points of success.",
     media:"assets/img/pubs/libero-max.webp", video:"libero-max",
     project:"https://liberomax.github.io/", pdf:"https://arxiv.org/pdf/2609.36518", repo:"liberomax/LIBERO-MAX", forks:true },
+  { title:"SimpleARM: Simple Agentic Memory for Generalist Robot Policies",
+    venue:"Preprint’26",
+    blurb:"A training-free memory layer that gives frozen robot policies compact task state, lifting RoboMME success from 45% to 67%.",
+    media:"assets/img/pubs/simplearm.webp", video:"simplearm",
+    project:"https://simplearm.github.io/", pdf:"https://arxiv.org/pdf/2609.36595", repo:"simplearm/SimpleARM" },
+  { title:"UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models",
+    venue:"NeurIPS’26", aw:"Oral · IS&T EI’26 (HPCI)", at:"ornl",
+    blurb:"Token merging for weather foundation models, guided by observation uncertainty: keep the salient, reliable tokens and merge the rest.",
+    media:"assets/img/pubs/utome.webp", video:"utome",
+    project:"https://ornl-utome.github.io", pdf:"https://openreview.net/pdf?id=VkO0Mg6cWj", repo:"ornl-utome/UtoMe", stars:false },
   { title:"Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning",
     venue:"ICLR’26 Agents in the Wild Workshop", aw:"Best Short Paper", at:"amazon",
     blurb:"An RL-trained planner that red-teams multimodal models with attacks that only work through visual reasoning.",
     media:"assets/img/pubs/mm-plan.webp", video:"mm-plan",
     project:"https://yunbeizhang.github.io/MM-Plan/", pdf:"https://arxiv.org/pdf/2603.20198", repo:"yunbeizhang/MM-Plan", forks:true },
-  { title:"DPCore: Dynamic Prompt Coreset for Continual Test-Time Adaptation",
-    venue:"ICML’25",
-    blurb:"Continual test-time adaptation with a dynamic coreset of visual prompts, robust to recurring and irregular domain shifts.",
-    media:"assets/img/pubs/dpcore.webp", video:"dpcore",
-    pdf:"https://arxiv.org/pdf/2406.10737", repo:"yunbeizhang/DPCore" },
+  { title:"Safety Must Survive Self-Improvement: Why Failures Persist and How Agents Recover",
+    venue:"Preprint’26",
+    blurb:"Stale scores keep unsafe programs alive across generations of self-improving agents; validation and rollback recover them.",
+    media:"assets/img/pubs/rsi-safety.webp", video:"rsi-safety",
+    project:"https://rsi-safety.github.io/", pdf:"https://arxiv.org/pdf/2610.01073", repo:"rsi-safety/RSI-Safety" },
+  { title:"Deny Without Disabling: Authorization-Paired Evaluation and Control for Multi-Agent Systems",
+    venue:"NeurIPS’26 Agents in the Wild Workshop",
+    blurb:"Block prohibited uses without breaking authorized ones: FlowReview cuts denied commits in multi-agent systems from 86% to zero.",
+    media:"assets/img/pubs/flowreview.webp", video:"flowreview",
+    project:"https://yunbeizhang.github.io/FlowReview/", pdf:"https://arxiv.org/pdf/2610.00371", repo:"yunbeizhang/FlowReview" },
   { title:"Adapting in the Dark: Efficient and Stable Test-Time Adaptation for Black-Box Models",
     venue:"NeurIPS’26", aw:"Best Paper · ICLR’26 TTU Workshop",
     blurb:"Test-time adaptation for API-only models through a lightweight local steering model.",
@@ -469,11 +484,11 @@ const FEATURED = [
     blurb:"Prime a local encoder with one pass through the API, then adapt locally with over 99.99% fewer API calls.",
     media:"assets/img/pubs/ares-gpt4o.webp", video:"ares",
     pdf:"https://arxiv.org/pdf/2604.01474", repo:"yunbeizhang/AReS" },
-  { title:"UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models",
-    venue:"NeurIPS’26", aw:"Oral · IS&T EI’26 (HPCI)", at:"ornl",
-    blurb:"Token merging for weather foundation models, guided by observation uncertainty: keep the salient, reliable tokens and merge the rest.",
-    media:"assets/img/pubs/utome.webp", video:"utome",
-    project:"https://ornl-utome.github.io", pdf:"https://openreview.net/pdf?id=VkO0Mg6cWj", repo:"ornl-utome/UtoMe", stars:false }
+  { title:"DPCore: Dynamic Prompt Coreset for Continual Test-Time Adaptation",
+    venue:"ICML’25",
+    blurb:"Continual test-time adaptation with a dynamic coreset of visual prompts, robust to recurring and irregular domain shifts.",
+    media:"assets/img/pubs/dpcore.webp", video:"dpcore",
+    pdf:"https://arxiv.org/pdf/2406.10737", repo:"yunbeizhang/DPCore" }
 ];
 
 /* Publications, shown by topic. Sorted automatically: award → first author → others.
