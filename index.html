@@ -283,7 +283,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:12px; flex-wrap:wr
         </div>
         <div class="links">
           <span class="item"><a href="https://scholar.google.com/citations?user=tVb54uUAAAAJ&amp;hl=en">Scholar</a><span class="stat" title="Citations on Google Scholar"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.6 13c2.1 0 3.6-1.5 3.6-3.7V3H1v5.6h2.5c0 1.2-.6 1.9-1.9 1.9V13Zm8.2 0c2.1 0 3.6-1.5 3.6-3.7V3H9.2v5.6h2.5c0 1.2-.6 1.9-1.9 1.9V13Z"/></svg><span id="nCites">0</span></span></span>
-          <span class="item"><a href="https://github.com/yunbeizhang">GitHub</a><span class="stat" title="Total GitHub stars across my projects"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"/></svg><span id="nStars">0</span></span></span>
+          <span class="item"><a href="https://github.com/yunbeizhang">GitHub</a><span class="stat" title="Total GitHub stars across my projects and papers"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"/></svg><span id="nStars">0</span></span></span>
           <a href="https://www.linkedin.com/in/zybeich">LinkedIn</a>
           <a href="https://x.com/YunbeiZhang">Twitter</a>
         </div>
@@ -387,18 +387,21 @@ const SCHOLAR_FALLBACK = 579;   // checked Oct 17, 2026
 /* GitHub stars, counted live in the visitor's browser (cached for an hour):
    · every non-fork repo under GH_USER — new repos are picked up automatically
    · every non-fork repo in GH_ORGS (my project organizations) — also automatic
-   · GH_EXTRA_REPOS: single repos inside organizations shared with other people */
+   · every code repo linked from a paper on this page (FEATURED / PUBS), wherever it lives
+   · GH_EXTRA_REPOS: any other single repo to include */
 const GH_USER = "yunbeizhang";
 const GH_ORGS = ["liberomax", "simplearm", "rsi-safety", "ornl-utome", "deepjepa"];
 const GH_EXTRA_REPOS = ["Picrew/awesome-agent-harness"];
-/* Last known counts (Oct 17, 2026), used offline and for anything the API can't reach */
+/* Last known counts (Oct 20, 2026), used offline and for anything the API can't reach */
 const GH_FALLBACK = {
   "yunbeizhang/awesome-visual-prompt-tuning":116, "yunbeizhang/mm-plan":89, "yunbeizhang/dpcore":31,
   "yunbeizhang/ot-vp":12, "yunbeizhang/beta":11, "yunbeizhang/agents-in-the-wild":5, "yunbeizhang/ares":5,
   "yunbeizhang/harness-binding-constraint":3, "yunbeizhang/text-for-vision":2, "yunbeizhang/flowreview":1,
   "yunbeizhang/yunbeizhang.github.io":1,
   "liberomax/libero-max":254, "simplearm/simplearm":2, "rsi-safety/rsi-safety":2,
-  "ornl-utome/utome":1, "deepjepa/deepjepa":0, "picrew/awesome-agent-harness":1863
+  "ornl-utome/utome":1, "deepjepa/deepjepa":0, "picrew/awesome-agent-harness":1873,
+  "weibowen555/clawsafety":20, "xixiaouab/vigil":4, "liofoil/skillsafety":3,
+  "xixiaouab/prompt-fusion-discovery":2, "janet-sw/sparse-reslim":0
 };
 const GH_FORKS_FALLBACK = { "liberomax/libero-max":28, "yunbeizhang/mm-plan":9 };
 
@@ -734,7 +737,7 @@ $("#feat").innerHTML = FEATURED.map(f => `
 const summarize = (stars, forks) => ({ stars, forks, total: Object.values(stars).reduce((a, b) => a + b, 0) });
 function showGitHub(d){
   countTo($("#nStars"), d.total, compact);
-  $("#nStars").parentElement.title = `${fmt(d.total)} GitHub stars across my projects`;
+  $("#nStars").parentElement.title = `${fmt(d.total)} GitHub stars across my projects and papers`;
   document.querySelectorAll(".gh[data-repo]").forEach(el => {
     const k = el.dataset.repo, st = d.stars[k], fk = d.forks[k], box = el.querySelector(".stats"), f = el.querySelector(".n-fk");
     box.hidden = !st;
@@ -744,16 +747,20 @@ function showGitHub(d){
   });
 }
 async function loadGitHub(){
-  const KEY = "gh-v4";
+  const KEY = "gh-v5";
   try { const c = JSON.parse(localStorage.getItem(KEY)); if(c && Date.now() - c.t < 36e5) return c.d; } catch(e){}
   const get = p => fetch("https://api.github.com/" + p).then(r => r.ok ? r.json() : Promise.reject(r.status));
   const stars = { ...GH_FALLBACK }, forks = { ...GH_FORKS_FALLBACK };
   let complete = true;
-  const add = r => { if(!r || r.fork) return; const k = r.full_name.toLowerCase(); stars[k] = r.stargazers_count; forks[k] = r.forks_count; };
+  const add = (r, any) => { if(!r || (r.fork && !any)) return; const k = r.full_name.toLowerCase(); stars[k] = r.stargazers_count; forks[k] = r.forks_count; };
   const lists = await Promise.all([`users/${GH_USER}/repos?per_page=100&type=owner`, ...GH_ORGS.map(o => `users/${o}/repos?per_page=100`)]
     .map(p => get(p).catch(() => { complete = false; return []; })));
   lists.flat().forEach(add);
-  (await Promise.all(GH_EXTRA_REPOS.map(n => get("repos/" + n).catch(() => { complete = false; return null; })))).forEach(add);
+  /* paper repos (and extras) that the user / org listings above don't already cover */
+  const covered = new Set([GH_USER, ...GH_ORGS].map(o => o.toLowerCase()));
+  const single = [...new Set([...FEATURED, ...PUBS].map(p => p.repo).concat(GH_EXTRA_REPOS).filter(Boolean)
+    .map(n => n.toLowerCase()))].filter(n => !covered.has(n.split("/")[0]));
+  (await Promise.all(single.map(n => get("repos/" + n).catch(() => { complete = false; return null; })))).forEach(r => add(r, true));
   const d = summarize(stars, forks);
   if(complete){ try { localStorage.setItem(KEY, JSON.stringify({t:Date.now(), d})); } catch(e){} }
   return d;
