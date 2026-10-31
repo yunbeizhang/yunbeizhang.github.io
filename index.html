@@ -407,6 +407,7 @@ const GH_FORKS_FALLBACK = { "liberomax/libero-max":28, "yunbeizhang/mm-plan":9 }
 
 /* News, newest first (the box scrolls) */
 const NEWS = [
+  ["Oct ’26", "<a href='https://simplearm.github.io/'>SimpleARM</a> accepted to the <span class='v'>CoRL’26 Workshop on Memory for Robot Foundation Models (RoboMem)</span>."],
   ["Oct ’26", "<a href='https://arxiv.org/pdf/2605.23950'>Stop Comparing LLM Agents Without Disclosing the Harness</a> featured in the <span class='v'>State of AI Report 2026</span>."],
   ["Oct ’26", "Two papers accepted to <span class='v'>WACV 2027</span>."],
   ["Sep ’26", "Three papers accepted to <span class='v'>NeurIPS 2026</span>, including <span class='hl'>two first-author papers</span>."],
@@ -453,7 +454,7 @@ const FEATURED = [
     media:"assets/img/pubs/libero-max.webp", video:"libero-max",
     project:"https://liberomax.github.io/", pdf:"https://arxiv.org/pdf/2609.36518", repo:"liberomax/LIBERO-MAX", forks:true },
   { title:"SimpleARM: Simple Agentic Memory for Generalist Robot Policies",
-    venue:"Preprint’26",
+    venue:"CoRL’26 RoboMem Workshop",
     blurb:"A training-free memory layer that gives frozen robot policies compact task state, lifting RoboMME success from 45% to 67%.",
     media:"assets/img/pubs/simplearm.webp", video:"simplearm",
     project:"https://simplearm.github.io/", pdf:"https://arxiv.org/pdf/2609.36595", repo:"simplearm/SimpleARM" },
@@ -502,9 +503,8 @@ const FEATURED = [
 const TOPICS = { evolve:"World Models", agents:"Agents", safety:"Safety", adapt:"Test-Time & Efficient AI" };
 /* Optional hand-picked order inside a tab (start of each title). Papers not listed follow automatically. */
 const TAB_ORDER = {
-  evolve: ["LIBERO-MAX", "SimpleARM", "DeepJEPA", "Wan-R1", "When Can Text Replace Vision", "Seeing Clearly", "Staying VIGILant"],
-  agents: ["Deny Without Disabling", "Agents in the Wild", "Safety Must Survive", "One Skill, Two Masters",
-           "Stop Comparing", "SimpleARM", "Agent Harness Engineering", "ClawSafety"]
+  evolve: ["WorldRSI", "RoboLiveMem", "LIBERO-MAX", "SimpleARM", "DeepJEPA", "Wan-R1", "When Can Text Replace Vision", "Seeing Clearly", "Staying VIGILant"],
+  agents: ["Deny Without Disabling", "Safety Must Survive", "Stop Comparing", "Agent Harness Engineering", "ClawSafety"]
 };
 /* In the Media (newest first). paper: [title, link] of the work that was covered.
    url and icon are optional (print coverage shows the outlet as text with a generic logo). */
@@ -540,6 +540,14 @@ const PUBS = [
     title:"Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning",
     img:"assets/img/pubs/mm-plan.webp", video:"mm-plan",
     project:"https://yunbeizhang.github.io/MM-Plan/", pdf:"https://arxiv.org/pdf/2603.20198", repo:"yunbeizhang/MM-Plan" },
+  { t:"evolve", first:true, venue:"Preprint’26",
+    title:"WorldRSI: Robot Agents That Build Worlds to Improve Themselves",
+    img:"assets/img/pubs/worldrsi.jpg",
+    project:"https://worldrsi.github.io/" },
+  { t:"evolve", first:true, venue:"Preprint’26",
+    title:"RoboLiveMem: Live Robot Memory When the World Does Not Wait",
+    img:"assets/img/pubs/robolivemem.png",
+    project:"https://robolivemem.github.io/" },
   { t:"evolve", first:true, aw:"Oral", venue:"NeurIPS’26 RWM Workshop",
     title:"LIBERO-MAX: Do Robot Policies Adapt When the World Changes?",
     img:"assets/img/pubs/libero-max.webp", video:"libero-max",
@@ -567,7 +575,7 @@ const PUBS = [
     img:"assets/img/pubs/stop-comparing.webp",
     pdf:"https://arxiv.org/pdf/2605.23950",
     press:[["State of AI ’26", "https://www.stateof.ai/2026-explore/agents"], ["AIDB", "https://ai-data-base.com/archives/119798"]] },
-  { t:["agents","safety"], first:true, venue:"ICLR’26 AIWILD Workshop",
+  { t:"safety", first:true, venue:"ICLR’26 AIWILD Workshop",
     title:"Agents in the Wild: Safety, Society, and the Illusion of Sociality on Moltbook",
     img:"assets/img/pubs/agents-in-the-wild.webp",
     project:"https://yunbeizhang.github.io/agents-in-the-wild/", pdf:"https://arxiv.org/pdf/2602.13284", repo:"yunbeizhang/agents-in-the-wild",
@@ -576,7 +584,7 @@ const PUBS = [
     title:"Safety Must Survive Self-Improvement: Why Failures Persist and How Agents Recover",
     img:"assets/img/pubs/rsi-safety.webp", video:"rsi-safety",
     project:"https://rsi-safety.github.io/", pdf:"https://arxiv.org/pdf/2610.01073", repo:"rsi-safety/RSI-Safety" },
-  { t:["evolve","agents"], first:true, venue:"Preprint’26",
+  { t:"evolve", first:true, venue:"CoRL’26 RoboMem Workshop",
     title:"SimpleARM: Simple Agentic Memory for Generalist Robot Policies",
     img:"assets/img/pubs/simplearm.webp", video:"simplearm",
     project:"https://simplearm.github.io/", pdf:"https://arxiv.org/pdf/2609.36595", repo:"simplearm/SimpleARM" },
@@ -597,7 +605,7 @@ const PUBS = [
     title:"ClawSafety: “Safe” LLMs, Unsafe Agents",
     img:"assets/img/pubs/clawsafety.webp",
     project:"https://weibowen555.github.io/ClawSafety/", pdf:"https://arxiv.org/pdf/2604.01438", repo:"weibowen555/ClawSafety" },
-  { t:["agents","safety"], venue:"Preprint’26",
+  { t:"safety", venue:"Preprint’26",
     title:"One Skill, Two Masters: Serving Users and Attackers through Skill Injection",
     img:"assets/img/pubs/one-skill.webp",
     pdf:"https://arxiv.org/pdf/2606.07943", repo:"liofoil/SkillSafety" },
