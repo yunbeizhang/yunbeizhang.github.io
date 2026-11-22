@@ -438,6 +438,9 @@ const VIDEOS = {
   "ares":            ["assets/video/ares.mp4",            "assets/video/ares-poster.webp"],
   "dpcore":          ["assets/video/dpcore.mp4",          "assets/video/dpcore-poster.webp"],
   "utome":           ["assets/video/utome.mp4",           "assets/video/utome-poster.webp"],
+  "robolivemem":     ["assets/video/robolivemem.mp4",     "assets/video/robolivemem-poster.webp"],
+  "robothink":       ["assets/video/robothink-move.mp4",   "assets/video/robothink-move-poster.webp"],
+  "roboada":         ["assets/video/roboada.mp4",         "assets/video/roboada-poster.webp"],
   "simplearm":       ["assets/video/simplearm.mp4",       "assets/video/simplearm-poster.webp"],
   "rsi-safety":      ["assets/video/rsi-safety.mp4",      "assets/video/rsi-safety-poster.webp"],
   "text-for-vision": ["assets/video/text-for-vision.mp4", "assets/video/text-for-vision-poster.webp"],
@@ -445,40 +448,51 @@ const VIDEOS = {
   "flowreview":      ["assets/video/flowreview.mp4",      "assets/video/flowreview-poster.webp"]
 };
 
-/* Selected work (3 × 3, in this order). media: one image URL or a list (stacked); video: a key of VIDEOS.
+/* Robotics papers shown in both Selected work and Publications. */
+const ROBO_THINK = {
+  title:"RoboThink: Let the Agent Think, Let the Policy Act",
+  venue:"Preprint’26",
+  blurb:"A reasoning agent gives a robot policy instructions on what to do and feedback on how to move.",
+  img:"assets/video/robothink-move-poster.webp", video:"robothink", placeholderLinks:true
+};
+const ROBO_ADA = {
+  title:"RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See",
+  venue:"Preprint’26",
+  blurb:"Adapts a frozen robot policy to hidden changes in physics by observing how the robot moves and correcting its commands.",
+  img:"assets/video/roboada-poster.webp", video:"roboada", placeholderLinks:true
+};
+const ROBO_LIVE_MEM = {
+  title:"RoboLiveMem: Is Robot Memory Solved When the World Does Not Wait?",
+  venue:"CoRL’26 Late-Breaking Results",
+  blurb:"A benchmark that tests robot memory on the same tasks with the world paused and with the world still changing as the robot thinks.",
+  img:"assets/video/robolivemem-poster.webp", video:"robolivemem",
+  project:"https://robolivemem.github.io/"
+};
+
+/* Selected work (3 × 3, in this order). img: one image URL; media can also be a list (stacked).
+   video: a key of VIDEOS.
    project / pdf / repo become icon links (repo = GitHub "owner/name", with its live star
-   count; stars:false hides the count, forks:true adds forks). at: internship where the work was done. */
+   count; stars:false hides the count, forks:true adds forks). placeholderLinks uses the homepage
+   for pending links. at: internship where the work was done. */
 const FEATURED = [
   { title:"LIBERO-MAX: Do Robot Policies Adapt When the World Changes?",
     venue:"NeurIPS’26 Robotics World Modeling Workshop", aw:"Oral",
     blurb:"A benchmark that changes the world mid-task. Fourteen robot policies lose 11–26 points of success.",
     media:"assets/img/pubs/libero-max.webp", video:"libero-max",
     project:"https://liberomax.github.io/", pdf:"https://arxiv.org/pdf/2609.36518", repo:"liberomax/LIBERO-MAX", forks:true },
-  { title:"SimpleARM: Simple Agentic Memory for Generalist Robot Policies",
-    venue:"CoRL’26 RoboMem Workshop",
-    blurb:"A training-free memory layer that gives frozen robot policies compact task state, lifting RoboMME success from 45% to 67%.",
-    media:"assets/img/pubs/simplearm.webp", video:"simplearm",
-    project:"https://simplearm.github.io/", pdf:"https://arxiv.org/pdf/2609.36595", repo:"simplearm/SimpleARM" },
-  { title:"UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models",
-    venue:"NeurIPS’26", aw:"Oral · IS&T EI’26 (HPCI)", at:"ornl",
-    blurb:"Token merging for weather foundation models, guided by observation uncertainty: keep the salient, reliable tokens and merge the rest.",
-    media:"assets/img/pubs/utome.webp", video:"utome",
-    project:"https://ornl-utome.github.io", pdf:"https://openreview.net/pdf?id=VkO0Mg6cWj", repo:"ornl-utome/UtoMe" },
+  ROBO_LIVE_MEM,
   { title:"Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning",
     venue:"ICLR’26 Agents in the Wild Workshop", aw:"Best Short Paper", at:"amazon",
     blurb:"An RL-trained planner that red-teams multimodal models with attacks that only work through visual reasoning.",
     media:"assets/img/pubs/mm-plan.webp", video:"mm-plan",
     project:"https://yunbeizhang.github.io/MM-Plan/", pdf:"https://arxiv.org/pdf/2603.20198", repo:"yunbeizhang/MM-Plan", forks:true },
-  { title:"Safety Must Survive Self-Improvement: Why Failures Persist and How Agents Recover",
-    venue:"Preprint’26",
-    blurb:"Stale scores keep unsafe programs alive across generations of self-improving agents; validation and rollback recover them.",
-    media:"assets/img/pubs/rsi-safety.webp", video:"rsi-safety",
-    project:"https://rsi-safety.github.io/", pdf:"https://arxiv.org/pdf/2610.01073", repo:"rsi-safety/RSI-Safety" },
-  { title:"Deny Without Disabling: Authorization-Paired Evaluation and Control for Multi-Agent Systems",
-    venue:"NeurIPS’26 Agents in the Wild Workshop",
-    blurb:"Block prohibited uses without breaking authorized ones: FlowReview cuts denied commits in multi-agent systems from 86% to zero.",
-    media:"assets/img/pubs/flowreview.webp", video:"flowreview",
-    project:"https://yunbeizhang.github.io/FlowReview/", pdf:"https://arxiv.org/pdf/2610.00371", repo:"yunbeizhang/FlowReview" },
+  ROBO_THINK,
+  ROBO_ADA,
+  { title:"UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models",
+    venue:"NeurIPS’26", aw:"Oral · IS&T EI’26 (HPCI)", at:"ornl",
+    blurb:"Token merging for weather foundation models, guided by observation uncertainty: keep the salient, reliable tokens and merge the rest.",
+    media:"assets/img/pubs/utome.webp", video:"utome",
+    project:"https://ornl-utome.github.io", pdf:"https://openreview.net/pdf?id=VkO0Mg6cWj", repo:"ornl-utome/UtoMe" },
   { title:"Adapting in the Dark: Efficient and Stable Test-Time Adaptation for Black-Box Models",
     venue:"NeurIPS’26", aw:"Best Paper · ICLR’26 TTU Workshop",
     blurb:"Test-time adaptation for API-only models through a lightweight local steering model.",
@@ -504,7 +518,7 @@ const FEATURED = [
 const TOPICS = { evolve:"World Models", agents:"Agents", safety:"Safety", adapt:"Test-Time & Efficient AI" };
 /* Optional hand-picked order inside a tab (start of each title). Papers not listed follow automatically. */
 const TAB_ORDER = {
-  evolve: ["WorldRSI", "RoboLiveMem", "LIBERO-MAX", "SimpleARM", "DeepJEPA", "Wan-R1", "When Can Text Replace Vision", "Seeing Clearly", "Staying VIGILant"],
+  evolve: ["WorldRSI", "RoboLiveMem", "RoboThink", "RoboAda", "LIBERO-MAX", "SimpleARM", "DeepJEPA", "Wan-R1", "When Can Text Replace Vision", "Seeing Clearly", "Staying VIGILant"],
   agents: ["Deny Without Disabling", "Safety Must Survive", "Stop Comparing", "Agent Harness Engineering", "ClawSafety"]
 };
 /* In the Media (newest first). paper: [title, link] of the work that was covered.
@@ -545,10 +559,9 @@ const PUBS = [
     title:"WorldRSI: Robot Agents That Build Worlds to Improve Themselves",
     img:"assets/img/pubs/worldrsi.jpg",
     project:"https://worldrsi.github.io/" },
-  { t:"evolve", first:true, venue:"Preprint’26",
-    title:"RoboLiveMem: Live Robot Memory When the World Does Not Wait",
-    img:"assets/img/pubs/robolivemem.png",
-    project:"https://robolivemem.github.io/" },
+  { ...ROBO_LIVE_MEM, t:"evolve", first:true },
+  { ...ROBO_THINK, t:"evolve", first:true },
+  { ...ROBO_ADA, t:"evolve", first:true },
   { t:"evolve", first:true, aw:"Oral", venue:"NeurIPS’26 RWM Workshop",
     title:"LIBERO-MAX: Do Robot Policies Adapt When the World Changes?",
     img:"assets/img/pubs/libero-max.webp", video:"libero-max",
@@ -716,11 +729,13 @@ const iconLink = (url, label, icon) => `<a class="ilink" href="${esc(url)}" titl
 function linksHTML(p, {stats = false, small = false} = {}){
   const out = [];
   if(p.project) out.push(iconLink(p.project, "Project page", ICON.web));
+  else if(p.placeholderLinks) out.push(iconLink("./", "Project page coming soon · Homepage", ICON.web));
   if(p.pdf) out.push(iconLink(p.pdf, "Paper (PDF)", ICON.arxiv));
+  else if(p.placeholderLinks) out.push(iconLink("./", "arXiv paper coming soon · Homepage", ICON.arxiv));
   if(p.repo){
     const st = stats && p.stars !== false;
     out.push(`<a class="ilink gh" href="https://github.com/${esc(p.repo)}" title="Code on GitHub" aria-label="Code on GitHub"${st ? ` data-repo="${esc(p.repo.toLowerCase())}"` : ""}>${ICON.github}${st ? `<span class="stats" hidden><i class="sep"></i>${ICON.star}<span class="n-st"></span>${p.forks ? `<i class="sep"></i>${ICON.fork}<span class="n-fk"></span>` : ""}</span>` : ""}</a>`);
-  }
+  } else if(p.placeholderLinks) out.push(iconLink("./", "GitHub repository coming soon · Homepage", ICON.github));
   return `<div class="plinks${small ? " sm" : ""}">${out.join("")}</div>`;
 }
 
@@ -735,7 +750,7 @@ function mediaHTML(m, video){
 }
 $("#feat").innerHTML = FEATURED.map(f => `
   <article class="fcard">
-    ${mediaHTML(f.media, f.video)}
+    ${mediaHTML(f.media || f.img, f.video)}
     ${venueHTML(f)}
     <h3>${esc(f.title)}${atHTML(f.at)}</h3>
     <p>${esc(f.blurb)}</p>
@@ -783,7 +798,7 @@ const topicsOf = p => [].concat(p.t);
 const sorted = PUBS.map((p,i) => [p,i]).sort((a,b) => rank(a[0]) - rank(b[0]) || a[1] - b[1]).map(x => x[0]);
 const shortName = t => { const i = t.indexOf(":"); return i > 0 ? t.slice(0,i) : t; };
 $("#grid").innerHTML = sorted.map((p, i) => {
-  const href = esc(p.pdf || p.project || "#");
+  const href = esc(p.pdf || p.project || (p.placeholderLinks ? "./" : "#"));
   const thumb = useVideo(p.video) ? videoTag(p.video) : p.img
     ? `<img src="${esc(p.img)}" alt="" loading="lazy" data-n="${esc(shortName(p.title))}" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'ph',textContent:this.dataset.n}))">`
     : `<span class="ph">${esc(shortName(p.title))}</span>`;
