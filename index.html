@@ -429,7 +429,7 @@ const NEWS = [
   ["Feb ’26", "Two papers accepted to <span class='v'>CVPR 2026</span>."]
 ];
 
-/* Short looping videos, one per paper: [video, poster (its first frame)].
+/* Short looping videos, one per paper: [video, poster].
    A card with video:"<key>" plays it (muted, only while on screen); people who prefer
    reduced motion see the card's still figure (media / img) instead. */
 const VIDEOS = {
@@ -438,6 +438,7 @@ const VIDEOS = {
   "ares":            ["assets/video/ares.mp4",            "assets/video/ares-poster.webp"],
   "dpcore":          ["assets/video/dpcore.mp4",          "assets/video/dpcore-poster.webp"],
   "utome":           ["assets/video/utome.mp4",           "assets/video/utome-poster.webp"],
+  "worldrsi":        ["assets/video/worldrsi.mp4",        "assets/video/worldrsi-poster.webp"],
   "robolivemem":     ["assets/video/robolivemem.mp4",     "assets/video/robolivemem-poster.webp"],
   "robothink":       ["assets/video/robothink-move.mp4?v=ca714f53", "assets/video/robothink-move-poster.webp"],
   "roboada":         ["assets/video/roboada.mp4",         "assets/video/roboada-poster.webp"],
@@ -557,7 +558,7 @@ const PUBS = [
     project:"https://yunbeizhang.github.io/MM-Plan/", pdf:"https://arxiv.org/pdf/2603.20198", repo:"yunbeizhang/MM-Plan" },
   { t:"evolve", first:true, venue:"Preprint’26",
     title:"WorldRSI: Robot Agents That Build Worlds to Improve Themselves",
-    img:"assets/img/pubs/worldrsi.jpg",
+    img:"assets/video/worldrsi-poster.webp", video:"worldrsi",
     project:"https://worldrsi.github.io/" },
   { ...ROBO_LIVE_MEM, t:"evolve", first:true },
   { ...ROBO_THINK, t:"evolve", first:true },
