@@ -1,7 +1,248 @@
 {
   "schema_version": 1,
   "author": "tVb54uUAAAAJ",
-  "papers": {},
+  "yearly_at": "2026-11-28T11:57:08.220Z",
+  "yearly": {
+    "2023": 5,
+    "2024": 17,
+    "2025": 80,
+    "2026": 627
+  },
+  "papers": {
+    "WA5NYHcadZ8C": {
+      "title": "A survey on self-improving test-time intelligence: Feedback-driven adapting, learning, and scaling at inference",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2609.01679, 2026"
+    },
+    "HoB7MX3m0LUC": {
+      "title": "Achieving reliable and fair skin lesion diagnosis via unsupervised domain adaptation",
+      "year": 2024,
+      "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition …, 2024"
+    },
+    "08ZZubdj9fEC": {
+      "title": "Adapting in the Dark: Efficient and Stable Test-Time Adaptation for Black-Box Models",
+      "year": 2026,
+      "venue": "🏆 NeurIPS 2026; ICLR 2026 Workshop on Test-Time Updates (Best Paper Award), 2026"
+    },
+    "bnK-pcrLprsC": {
+      "title": "Adapting Vision Foundation Models with Cascaded Semantics",
+      "year": 2026,
+      "venue": "TMLR, 2026"
+    },
+    "eJXPG6dFmWUC": {
+      "title": "Agent harness engineering: A survey",
+      "year": 2026,
+      "venue": "URL https://openreview. net/pdf, 2026"
+    },
+    "XiSMed-E-HIC": {
+      "title": "Agents in the Wild: Safety, Society, and the Illusion of Sociality on Moltbook",
+      "year": 2026,
+      "venue": "ICLR 2026 Workshop AIWILD, 2026"
+    },
+    "9vf0nzSNQJEC": {
+      "title": "Benchmarking Heterogeneous and Compositional Continual Learning for Vision-Language-Action Models"
+    },
+    "vRqMK49ujn8C": {
+      "title": "ClawSafety: \"Safe\" LLMs, Unsafe Agents",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2604.01438, 2026"
+    },
+    "J-pR_7NvFogC": {
+      "title": "Continual Test-Time Adaptation in Computer Vision: Methods, Benchmarks, and Future Directions",
+      "year": 2026,
+      "venue": "TMLR, 2026"
+    },
+    "SP6oXDckpogC": {
+      "title": "CTR-LoRA: Curvature-Aware and Trust-Region Guided Low-Rank Adaptation for Large Language Models",
+      "year": 2025,
+      "venue": "🏆 ICASSP 2026 (Oral), 2025"
+    },
+    "_B80troHkn4C": {
+      "title": "DeepJEPA: Scaling World Models from Within",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2610.00368, 2026"
+    },
+    "tkaPQYYpVKoC": {
+      "title": "Deny Without Disabling: Authorization-Paired Evaluation and Control for Multi-Agent Systems",
+      "year": 2026,
+      "venue": "NeurIPS 2026 Workshop AIWILD, 2026"
+    },
+    "a0OBvERweLwC": {
+      "title": "Describe Anything in Medical Images",
+      "year": 2025,
+      "venue": "ICML 2025 Workshop FM4LS, 2025"
+    },
+    "D03iK_w7-QYC": {
+      "title": "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI-Expert Feedback",
+      "year": 2025,
+      "venue": "NeurIPS 2025, 2025"
+    },
+    "f2IySw72cVMC": {
+      "title": "DPCore: Dynamic prompt coreset for continual test-time adaptation",
+      "year": 2025,
+      "venue": "ICML 2025, 2025"
+    },
+    "HE397vMXCloC": {
+      "title": "Dynamic Hub-and-Spoke Memory for Streaming Video Understanding",
+      "year": 2026,
+      "venue": "EMNLP 2026 Findings, 2026"
+    },
+    "CHSYGLWDkRkC": {
+      "title": "eSkinHealth: A Multimodal Dataset for Neglected Tropical Skin Diseases",
+      "year": 2025,
+      "venue": "ACM MM 2025 Datasets Track, 2025"
+    },
+    "LPZeul_q3PIC": {
+      "title": "EVA-0: Test-Time Model Evolution with Only Two Forward Passes per Sample",
+      "year": 2026,
+      "venue": "NeurIPS 2026, 2026"
+    },
+    "eMMeJKvmdy0C": {
+      "title": "How Medical VLMs Underutilize Their Vision Encoders: A Dermatology Perspective",
+      "year": 2025,
+      "venue": "arXiv preprint arXiv:2609.36557, 2025"
+    },
+    "mvPsJ3kp5DgC": {
+      "title": "Layer-Specific Prompt Fusion Discovery via Differentiable Search in Vision Foundation Models",
+      "year": 2026,
+      "venue": "ECCV 2026, 2026"
+    },
+    "1qzjygNMrQYC": {
+      "title": "Less Tokens, Better Forecasts: Sparse Residual Routing for Efficient Weather Prediction",
+      "year": 2026,
+      "venue": "ECCV 2026, 2026"
+    },
+    "AXPGKjj_ei8C": {
+      "title": "LIBERO-MAX: Do Robot Policies Adapt When the World Changes?",
+      "year": 2026,
+      "venue": "🏆 NeurIPS 2026 Workshop Robotics World Modeling (Oral), 2026"
+    },
+    "K3LRdlH-MEoC": {
+      "title": "Not All Directions Matter: Toward Structured and Task-Aware Low-Rank Adaptation",
+      "year": 2026,
+      "venue": "ACL 2026, 2026"
+    },
+    "_xSYboBqXhAC": {
+      "title": "On certifying and improving generalization to unseen domains",
+      "year": 2022,
+      "venue": "arXiv preprint arXiv:2206.12364, 2022"
+    },
+    "LkGwnXOMwfcC": {
+      "title": "On the fly neural style smoothing for risk-averse domain generalization",
+      "year": 2024,
+      "venue": "WACV 2024, 2024"
+    },
+    "4OULZ7Gr8RgC": {
+      "title": "OT-VP: Optimal transport-guided visual prompting for test-time adaptation",
+      "year": 2025,
+      "venue": "🏆 WACV 2025 (Oral), 2025"
+    },
+    "BrmTIyaxlBUC": {
+      "title": "POISE: Position-Aware Undetectable Skill Injection on LLM Agents",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2606.07943, 2026"
+    },
+    "4fKUyHm3Qg0C": {
+      "title": "Prime Once, then Reprogram Locally: An Efficient Alternative to Black-Box Service Model Adaptation",
+      "year": 2026,
+      "venue": "🏆 CVPR 2026 (Highlight), 2026"
+    },
+    "KxtntwgDAa4C": {
+      "title": "Prompt-based adaptation in large-scale vision models: A survey",
+      "year": 2025,
+      "venue": "TMLR, 2025"
+    },
+    "5ugPr518TE4C": {
+      "title": "Rethinking Layer-Wise Information Allocation for Vision Foundation Model Adaptation",
+      "year": 2026,
+      "venue": "ACM MM 2026, 2026"
+    },
+    "1sJd4Hv_s6UC": {
+      "title": "RoadBench: A Vision-Language Foundation Model and Benchmark for Road Damage Understanding",
+      "year": 2025,
+      "venue": "WACV 2026, 2025"
+    },
+    "JoZmwDi-zQgC": {
+      "title": "Safety Must Survive Self-Improvement: Why Failures Persist and How Agents Recover",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2610.01073, 2026"
+    },
+    "Tiz5es2fbqcC": {
+      "title": "Seeing Clearly, Reasoning Confidently: Plug-and-Play Remedies for Vision Language Model Blindness",
+      "year": 2026,
+      "venue": "CVPR 2026, 2026"
+    },
+    "Y5dfb0dijaUC": {
+      "title": "Simple Agentic Memory for Generalist Robot Policies",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2609.36595, 2026"
+    },
+    "pyW8ca7W8N0C": {
+      "title": "SoK: Can Synthetic Images Replace Real Data? A Survey of Utility and Privacy of Synthetic Image Generation",
+      "year": 2025,
+      "venue": "USENIX Security 2025, 2025"
+    },
+    "q3oQSFYPqjQC": {
+      "title": "Staying VIGILant: Mitigating Visual Laziness via Counterfactual Visual Alignment in MLLMs",
+      "year": 2026,
+      "venue": "ECCV 2026, 2026"
+    },
+    "sSrBHYA8nusC": {
+      "title": "Stop comparing LLM agents without disclosing the harness",
+      "year": 2026,
+      "venue": "ICML 2026 Workshop AIWILD, 2026"
+    },
+    "V3AGJWp-ZtQC": {
+      "title": "Structure-Regularized Interpretable TCR-Epitope Prediction",
+      "year": 2026,
+      "venue": "MLCB 2026, 2026"
+    },
+    "ZHo1McVdvXMC": {
+      "title": "Test-time assessment of a model’s performance on unseen domains via optimal transport",
+      "year": 2024,
+      "venue": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition …, 2024"
+    },
+    "olpn-zPbct0C": {
+      "title": "Towards Continual Test-Time Adaptation of Vision-Language Models in Open-Vocabulary Semantic Segmentation",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2608.29923, 2026"
+    },
+    "dfsIfKJdRG4C": {
+      "title": "Understanding the Transferability of Representations via Task-Relatedness",
+      "year": 2024,
+      "venue": "NeurIPS 2024, 2024"
+    },
+    "5awf1xo2G04C": {
+      "title": "UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models",
+      "year": 2026,
+      "venue": "NeurIPS 2026; IS&T EI’26 (HPCI) Oral, 2026"
+    },
+    "738O_yMBCRsC": {
+      "title": "Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning",
+      "year": 2026,
+      "venue": "🏆 ICLR 2026 Workshop AIWILD (Best Short Paper Award), 2026"
+    },
+    "dshw04ExmUIC": {
+      "title": "Visual instance-aware prompt tuning",
+      "year": 2025,
+      "venue": "ACM MM 2025, 2025"
+    },
+    "UxriW0iASnsC": {
+      "title": "Visual Variational Autoencoder Prompt Tuning",
+      "year": 2025,
+      "venue": "CVPR 2025 Workshop FGVC, 2025"
+    },
+    "tS2w5q8j5-wC": {
+      "title": "Wan-R1: Verifiable-Reinforcement Learning for Video Reasoning",
+      "year": 2026,
+      "venue": "ECCV 2026, 2026"
+    },
+    "PELIpwtuRlgC": {
+      "title": "When Can Text Replace Vision? Structural Bottlenecks in Diagram Reasoning",
+      "year": 2026,
+      "venue": "arXiv preprint arXiv:2609.39142, 2026"
+    }
+  },
   "snapshots": [
     {"at":"2026-10-19T05:35:15.000Z","citations":581,"h_index":15,"i10_index":18,"source":"git"},
     {"at":"2026-10-21T22:45:57.000Z","citations":591,"h_index":15,"i10_index":18,"source":"git"},
@@ -51,6 +292,7 @@
     {"at":"2026-11-26T12:47:45.000Z","citations":716,"h_index":16,"i10_index":22,"source":"git"},
     {"at":"2026-11-26T23:53:58.000Z","citations":726,"h_index":16,"i10_index":22,"source":"git"},
     {"at":"2026-11-27T12:41:28.000Z","citations":726,"h_index":16,"i10_index":22,"source":"git"},
-    {"at":"2026-11-27T23:31:20.000Z","citations":739,"h_index":16,"i10_index":23,"source":"git"}
+    {"at":"2026-11-27T23:31:20.000Z","citations":739,"h_index":16,"i10_index":23,"source":"git"},
+    {"at":"2026-11-28T11:57:08.220Z","citations":739,"h_index":16,"i10_index":23,"counts":{"WA5NYHcadZ8C":4,"HoB7MX3m0LUC":20,"08ZZubdj9fEC":10,"bnK-pcrLprsC":2,"eJXPG6dFmWUC":48,"XiSMed-E-HIC":26,"9vf0nzSNQJEC":0,"vRqMK49ujn8C":27,"J-pR_7NvFogC":6,"SP6oXDckpogC":14,"_B80troHkn4C":3,"tkaPQYYpVKoC":0,"a0OBvERweLwC":34,"D03iK_w7-QYC":19,"f2IySw72cVMC":68,"HE397vMXCloC":3,"CHSYGLWDkRkC":9,"LPZeul_q3PIC":1,"eMMeJKvmdy0C":4,"mvPsJ3kp5DgC":17,"1qzjygNMrQYC":1,"AXPGKjj_ei8C":12,"K3LRdlH-MEoC":43,"_xSYboBqXhAC":13,"LkGwnXOMwfcC":4,"4OULZ7Gr8RgC":29,"BrmTIyaxlBUC":13,"4fKUyHm3Qg0C":7,"KxtntwgDAa4C":49,"5ugPr518TE4C":12,"1sJd4Hv_s6UC":20,"JoZmwDi-zQgC":3,"Tiz5es2fbqcC":2,"Y5dfb0dijaUC":4,"pyW8ca7W8N0C":5,"q3oQSFYPqjQC":31,"sSrBHYA8nusC":56,"V3AGJWp-ZtQC":1,"ZHo1McVdvXMC":3,"olpn-zPbct0C":1,"dfsIfKJdRG4C":20,"5awf1xo2G04C":0,"738O_yMBCRsC":8,"dshw04ExmUIC":65,"UxriW0iASnsC":15,"tS2w5q8j5-wC":6,"PELIpwtuRlgC":1}}
   ]
 }
