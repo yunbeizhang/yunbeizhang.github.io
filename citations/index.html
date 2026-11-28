@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Citations · Yunbei Zhang</title>
+  <link rel="icon" type="image/png" href="../assets/img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="tracker.js" defer></script>
+</head>
+<body>
+  <div class="sample-band" id="sample-band" hidden>Sample data: synthetic counts for previewing the layout</div>
+
+  <header class="bar">
+    <div class="wrap">
+      <a class="me" href="../">Yunbei Zhang</a>
+      <a class="out" id="scholar-link" href="https://scholar.google.com/citations?user=tVb54uUAAAAJ&amp;hl=en">Google Scholar</a>
+      <button class="theme-btn" id="theme-btn" type="button"></button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <h1>Citations</h1>
+      <span class="aside" id="checked"></span>
+    </div>
+
+    <div class="range-row" id="range-row" hidden>
+      <div class="tabs" id="ranges" role="group" aria-label="Time range"></div>
+      <button type="button" class="focus-pill" id="focus-chip" hidden><span class="focus-dot"></span><span id="focus-name"></span><span class="x" aria-hidden="true">×</span><span class="sr">Show all papers</span></button>
+    </div>
+    <div class="custom" id="custom" hidden>
+      <select id="from-select" aria-label="From check"></select>
+      <span aria-hidden="true">→</span>
+      <select id="to-select" aria-label="To check"></select>
+    </div>
+
+    <div id="board" hidden>
+      <div class="stats" aria-label="Summary">
+        <div class="stat-cell">
+          <h2 class="sub">Citations</h2>
+          <p class="big" id="t-total">—</p>
+        </div>
+        <div class="stat-cell">
+          <h2 class="sub">Gained</h2>
+          <p class="big" id="t-gain">—</p>
+          <p class="note" id="t-gain-note"></p>
+        </div>
+        <div class="stat-cell">
+          <h2 class="sub">h-index · i10</h2>
+          <p class="big"><span id="t-h">—</span><span class="dim"> · </span><span id="t-i10">—</span></p>
+          <p class="note" id="t-index-note"></p>
+        </div>
+        <div class="stat-cell">
+          <h2 class="sub">Rising fastest</h2>
+          <p class="big big-text" id="t-top">—</p>
+          <p class="note" id="t-top-note"></p>
+        </div>
+      </div>
+
+      <section aria-labelledby="main-title">
+        <div class="head">
+          <div class="head-text">
+            <h2 id="main-title" tabindex="-1">Total citations</h2>
+            <p class="paper-meta" id="main-meta" hidden></p>
+          </div>
+          <div class="tabs tabs-small right" id="modes" role="group" aria-label="Chart">
+            <button type="button" data-mode="total" aria-pressed="true">Total</button>
+            <button type="button" data-mode="gains" aria-pressed="false">Gains</button>
+          </div>
+        </div>
+        <div class="plot" id="main-plot"></div>
+      </section>
+
+      <div class="duo">
+        <section aria-labelledby="years-title">
+          <div class="head">
+            <h2 id="years-title">Citations per year</h2>
+            <span class="aside" id="years-aside"></span>
+          </div>
+          <div class="plot plot-small" id="years-plot"></div>
+        </section>
+        <section aria-labelledby="scatter-title">
+          <div class="head">
+            <h2 id="scatter-title">Momentum</h2>
+            <span class="aside">select a dot to follow a paper</span>
+          </div>
+          <div class="plot plot-small" id="scatter-plot"></div>
+        </section>
+      </div>
+
+      <section aria-labelledby="papers-title">
+        <div class="head">
+          <h2 id="papers-title">Where the citations came from</h2>
+          <span class="aside" id="papers-aside"></span>
+          <div class="table-tools right" id="paper-tools" hidden>
+            <input type="search" id="search" placeholder="Find a paper" aria-label="Find a paper">
+            <label class="check"><input type="checkbox" id="changed-only"> Changed only</label>
+          </div>
+        </div>
+        <p class="empty" id="papers-empty" hidden></p>
+        <div class="table-wrap" id="papers-wrap" hidden>
+          <table class="papers">
+            <thead>
+              <tr>
+                <th scope="col" class="c-title">Paper</th>
+                <th scope="col" class="c-trend"><span class="sr">Trend</span></th>
+                <th scope="col" class="c-num"><button type="button" data-sort="count">Citations</button></th>
+                <th scope="col" class="c-num"><button type="button" data-sort="delta" aria-pressed="true">Change</button></th>
+                <th scope="col" class="c-num c-growth"><button type="button" data-sort="growth">Growth</button></th>
+              </tr>
+            </thead>
+            <tbody id="paper-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <p class="error" id="error" hidden></p>
+  </main>
+
+  <div class="tip" id="tip" role="status" hidden></div>
+  <noscript><p class="wrap">This page needs JavaScript to read the saved citation history.</p></noscript>
+</body>
+</html>

@@ -1,14 +1,27 @@
-# Refreshes assets/scholar.json twice a day (via SerpApi) so the homepage shows current citations.
-# Two runs a day use about 62 of SerpApi's 250 free searches per month.
+# Saves a Google Scholar capture twice a day (via SerpAPI): the homepage number in
+# assets/scholar.json and one snapshot per run in assets/scholar-history.json.
+# Each capture uses one SerpAPI search per 100 papers. On the 1st of each month, or
+# when run by hand with "per-paper years" ticked, it also saves each cited paper's
+# citations per year, one extra search per paper. SerpAPI's free plan has 250 a month.
 name: Update Google Scholar citations
 
 on:
   schedule:
     - cron: "17 3,15 * * *"   # 03:17 and 15:17 UTC (GitHub may start scheduled runs a little late)
+    - cron: "47 16 1 * *"     # monthly: also refresh per-paper citations per year
   workflow_dispatch:          # lets you run it by hand from the Actions tab
+    inputs:
+      paper_years:
+        description: "Also save per-paper citations per year (one extra search per paper)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
+
+concurrency:
+  group: scholar-citations
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -18,14 +31,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: python scripts/update_scholar.py
+      - run: python scripts/update_scholar.py ${{ (inputs.paper_years || github.event.schedule == '47 16 1 * *') && '--paper-years' || '' }}
         env:
           SCHOLAR_ID: tVb54uUAAAAJ
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
-      - name: Commit if the numbers changed
+      - name: Commit the capture
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/scholar.json
-          git diff --cached --quiet || git commit -m "Update Google Scholar citations"
+          git add assets/scholar.json assets/scholar-history.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update Google Scholar citations"
+          git pull --rebase --quiet
           git push
